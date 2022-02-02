@@ -1,0 +1,1 @@
+bulletTimer = 1

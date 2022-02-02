@@ -11,3 +11,12 @@ speed_mult = 1
 fallspeed = 0
 jumpspeed = -16
 inv_time = 0
+
+
+on_ground = true
+
+fox_timer = 0
+fox_max = 6
+
+buffer_timer = 0 //current buffer
+buffer_max = 5 //What buffer is set when input

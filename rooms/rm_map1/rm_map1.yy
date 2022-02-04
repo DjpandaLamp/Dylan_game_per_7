@@ -60,6 +60,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"floor3","path":"objects/floor3/floor3.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":14.333334,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-48.0,"y":0.0,"resourceVersion":"1.0","name":"inst_50FD0B4C","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"floor3","path":"objects/floor3/floor3.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1104.0,"y":336.0,"resourceVersion":"1.0","name":"inst_1C7E28DC","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"floor3","path":"objects/floor3/floor3.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":-0.0148417056,"scaleX":1.0,"scaleY":9.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1344.0,"y":-192.0,"resourceVersion":"1.0","name":"inst_474D822F","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"fallingbricksObj","path":"objects/fallingbricksObj/fallingbricksObj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":896.0,"y":336.0,"resourceVersion":"1.0","name":"inst_2A540FE","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":29,"SerialiseHeight":16,"TileSerialiseData":[
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,
@@ -118,6 +119,7 @@
     {"name":"inst_50FD0B4C","path":"rooms/rm_map1/rm_map1.yy",},
     {"name":"inst_1C7E28DC","path":"rooms/rm_map1/rm_map1.yy",},
     {"name":"inst_474D822F","path":"rooms/rm_map1/rm_map1.yy",},
+    {"name":"inst_2A540FE","path":"rooms/rm_map1/rm_map1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

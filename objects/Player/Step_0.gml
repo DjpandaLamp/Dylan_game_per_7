@@ -142,6 +142,11 @@ y=y+(vspd)
 
 #endregion
 
+
+
+
+
+
 #region //Effects and Death code
 if y>room_height
 {

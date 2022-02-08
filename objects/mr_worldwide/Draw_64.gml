@@ -20,8 +20,7 @@ else
 	draw_text(32,598+global.uiPos, coin_text + string(global.coins))
 	draw_text(32,630+global.uiPos, "Health: " + string(global.health))
 	draw_text(32,566+global.uiPos, "Time: " + string(floor(Player.roomtimer)))
-	draw_text(32,320+global.uiPos,  string(fallingbricksObj.respawn_timer_set))
-	draw_text(32,356+global.uiPos,  string(fallingbricksObj.respawn_timer))
+
 	
 	
 	draw_set_color(c_red)

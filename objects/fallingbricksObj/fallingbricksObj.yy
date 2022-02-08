@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "fallingbricks2_spt",
-    "path": "sprites/fallingbricks2_spt/fallingbricks2_spt.yy",
+    "name": "fallingbricks1_spt",
+    "path": "sprites/fallingbricks1_spt/fallingbricks1_spt.yy",
   },
   "solid": false,
   "visible": true,

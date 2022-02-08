@@ -38,7 +38,7 @@
     "spriteId": {"name":"fallingbricks2_spt","path":"sprites/fallingbricks2_spt/fallingbricks2_spt.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 3.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

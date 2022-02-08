@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "other objects",
+    "path": "folders/Objects/other objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "floor3",

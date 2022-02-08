@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(place_meeting(x,y+(3*vspd), floor3))
+if(place_meeting(x,y+vspd, fallingbricksObj))  and other.sprite_index = fallingbricks1_spt or (place_meeting(x,y+vspd, fallingbricksObj))  and other.sprite_index = fallingbricks2_spt
 {
-    while(!place_meeting(x,y+sign(vspd),floor3))
+    while(!place_meeting(x,y+sign(vspd),fallingbricksObj))
     {
         y = y+(sign(vspd));
     moving = false
@@ -11,13 +11,13 @@ if(place_meeting(x,y+(3*vspd), floor3))
     vspd = 0;
 } 
 
-if(place_meeting(x+(3*hspd),y, floor3)) and other.sprite_index = fallingbricks1_spt
+if(place_meeting(x+hspd,y, fallingbricksObj)) and other.sprite_index = fallingbricks1_spt or (place_meeting(x+hspd,y, fallingbricksObj)) and other.sprite_index = fallingbricks2_spt
 {
-    while(!place_meeting(x+sign(hspd),y,floor3))
+    while(!place_meeting(x+sign(hspd),y,fallingbricksObj))
     {
         x = x+(sign(hspd));
-        moving = false
-    }
-	 vspd = 0;
+       moving = false
+   }
+	 hspd = 0;
 }
    

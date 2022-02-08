@@ -20,7 +20,7 @@ if vspd > 12.5 vspd = 12.5
 
 #region //Movement and sprite
     
-if place_meeting(x,y+1,floor3)
+if place_meeting(x,y+1,floor3) or place_meeting(x,y+1,fallingbricksObj)
     {
     on_ground = true
     jump = true
@@ -112,20 +112,53 @@ else
 #endregion
 
 #region //Ground and wall colision + Jumping
-if(place_meeting(x+(3*hspd),y, floor3))
+if place_meeting(x,y+vspd,fallingbricksObj)
+{
+var fb
+fb=instance_place(x,y+vspd,fallingbricksObj)
+
+if(place_meeting(x,y+vspd, fallingbricksObj))  and fb.sprite_index = fallingbricks1_spt or (place_meeting(x,y+vspd, fallingbricksObj))  and fb.sprite_index = fallingbricks2_spt
+{
+    while(!place_meeting(x,y+sign(vspd),fallingbricksObj))
+    {
+        y = y+(sign(vspd));
+    moving = false
+    }
+    fallspeed = 0
+    vspd = 0;
+} 
+
+if(place_meeting(x+hspd,y, fallingbricksObj)) and fb.sprite_index = fallingbricks1_spt or (place_meeting(x+hspd,y, fallingbricksObj)) and fb.sprite_index = fallingbricks2_spt
+{
+    while(!place_meeting(x+sign(hspd),y,fallingbricksObj))
+    {
+        x = x+(sign(hspd));
+       moving = false
+   }
+	 hspd = 0;
+}
+   
+
+}
+
+
+
+if(place_meeting(x+hspd,y, floor3)) 
 {
     while(!place_meeting(x+sign(hspd),y,floor3))
     {
         x = x+(sign(hspd));
         moving = false
     }
+	
     hspd = 0;
 } 
+
 
 x=x+(hspd)
 
 
-if(place_meeting(x,y+(3*vspd), floor3))
+if(place_meeting(x,y+vspd, floor3)) 
 {
     while(!place_meeting(x,y+sign(vspd),floor3))
     {

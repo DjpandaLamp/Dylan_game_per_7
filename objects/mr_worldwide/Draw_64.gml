@@ -1,6 +1,6 @@
 
 
-draw_set_color(c_white)
+draw_set_color(c_black)
 draw_set_font(determination_sml)
 
 
@@ -8,14 +8,12 @@ draw_set_font(determination_sml)
 
 if room = rm_mainmenu
 {
-	draw_set_font(determination)
-	draw_text(room_width/3,360, "The Saga of Rizado")
-	draw_set_font(determination_sml)
-	draw_text(520,432, "Use N and P to swich rooms")
-	draw_text(520,464, "Use ENTER key on flags to enter levels")
+	draw_text(512,700,"Press enter")
+	draw_text(512,732,string(global.menu))
 }
 else
 {
+	draw_set_color(c_white)
 	draw_sprite_ext(ui_sprite,0,16,518+global.uiPos,7,7,0,c_white,1)
 	draw_text(32,598+global.uiPos, coin_text + string(global.coins))
 	draw_text(32,630+global.uiPos, "Health: " + string(global.health))

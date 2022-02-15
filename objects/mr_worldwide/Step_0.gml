@@ -103,7 +103,3 @@ if cloud_spawning = true
 
 
 
-if instance_exists(Player) 
-{
-blaze_check = Player.blaze_timer
-}

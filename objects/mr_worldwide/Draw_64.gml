@@ -32,21 +32,4 @@ else
 	draw_rectangle(34,664+global.uiPos,190,648+76+global.uiPos,1)
 	draw_rectangle(35,665+global.uiPos,189,648+75+global.uiPos,1)
 	
-	
-	
-	draw_set_color(c_white)
-	if Player.blaze_timer < 0
-	{
-		draw_text(32,534+global.uiPos, "Attack: Ready")
-	}
-	else
-	{
-		draw_text(32,534+global.uiPos, "Attack: " + string(blaze_check) + "'s")
-	}
-	
-	
-	
-
-	
-
 }

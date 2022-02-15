@@ -1,5 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+if world_value<global.plot_value
+{
+	instance_destroy(self)	
+}
+
 if respawn_timer_set = true
 {
 	respawn_timer += 1

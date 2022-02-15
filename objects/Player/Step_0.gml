@@ -2,7 +2,7 @@
 roomtimer -= 1.5/room_speed
 buffer_timer -=1
 inv_time -=1/room_speed
-blaze_timer -=1/room_speed
+
 fallspeed = .75
 fox_timer -=1
 
@@ -62,35 +62,17 @@ vspd = jumpspeed
 }
 
 moving = false
-if keyboard_check(vk_down) 
-    {
-        
-        moving = true
-    }
+
 if keyboard_check(vk_right) 
     {
-        sprite_index = playerrunright
         dir = 2
         moving = true        
     }
 if keyboard_check(vk_left) 
     {
-        sprite_index = playerrunleft
         dir = 3
         moving = true
-    }
- 
-if moving = false and dir = 2
-    {
-        sprite_index = playeridleright
-        
-    }
-if moving = false and dir = 3
-    {
-        sprite_index = playeridleleft
-    }    
-    
-    
+    } 
 if place_meeting(x,y+1,floor3)
     {
     on_ground = true
@@ -175,11 +157,6 @@ y=y+(vspd)
 
 #endregion
 
-
-
-
-
-
 #region //Effects and Death code
 if y>room_height
 {
@@ -203,26 +180,55 @@ if inv_time < 0  effect_clear()
 #endregion
 
 #region //Attack
-if keyboard_check_pressed(ord("Q")) and blaze_timer < 0
+if keyboard_check_pressed(vk_escape) 
 {
-    blaze_timer = 5
-    blaze = true
+	if dir = 3
+	{
+		Attacking = true
+		sprite_index = Playerattackleft
+		instance_create_depth(x-96,y-32,0,attackhitbox)
+	}
+	if dir = 2
+	{
+		Attacking = true
+		sprite_index = Playerattackright
+		instance_create_depth(x+32,y-32,0,attackhitbox)
+	}
 }
-if blaze_timer < 4
+
+if !instance_exists(attackhitbox)
 {
-    blaze = false
+Attacking = false	
 }
-else
+
+if Attacking = false
 {
-    if dir = 2
-    {
-        sprite_index = playerfireright
-    }
-    if dir = 3
-    {
-        sprite_index = playerfireleft
-    }
+	if dir = 3 
+	{
+		if moving
+		{
+			sprite_index = playerrunleft
+		}
+		else
+		{
+			sprite_index = playeridleleft
+		}
+	}
+	if dir = 2
+		{
+		if moving
+		{
+			sprite_index = playerrunright
+		}
+		else
+		{
+			sprite_index = playeridleright
+		}
+	}
 }
+
+
+
 
 #endregion
 

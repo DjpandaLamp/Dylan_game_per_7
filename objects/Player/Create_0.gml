@@ -1,8 +1,7 @@
 roomtimer = 500
 jump = true
 moving = false
-blaze = false
-blaze_timer = 0
+Attacking = false
 friction = 2
 dir = 1
 vspd = 0

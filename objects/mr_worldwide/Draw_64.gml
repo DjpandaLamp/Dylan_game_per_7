@@ -6,12 +6,7 @@ draw_set_font(determination_sml)
 
 
 
-if room = rm_mainmenu
-{
-	draw_text(512,700,"Press enter")
-	draw_text(512,732,string(global.menu))
-}
-else
+if  room!=rm_mainmenu
 {
 	draw_set_color(c_white)
 	draw_sprite_ext(ui_sprite,0,16,518+global.uiPos,7,7,0,c_white,1)
@@ -31,5 +26,5 @@ else
 	
 	draw_rectangle(34,664+global.uiPos,190,648+76+global.uiPos,1)
 	draw_rectangle(35,665+global.uiPos,189,648+75+global.uiPos,1)
-	
 }
+

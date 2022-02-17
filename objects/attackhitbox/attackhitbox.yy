@@ -4,7 +4,7 @@
     "path": "sprites/attackbbox/attackbbox.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

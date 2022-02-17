@@ -1,24 +1,6 @@
 /// @description Insert description here
 // You can write your code in this edi
-if room = rm_mainmenu
-{
-	if keyboard_check_pressed(vk_down)
-	{
-	global.menu +=1
-	}
-	if keyboard_check_pressed(vk_up)
-	{
-    global.menu-=1
-	}
-		if global.menu = 2
-		{
-			global.menu = 0
-		}
-		if global.menu = -1
-		{
-			global.menu = 1	
-		}
-}
+
 
 
 
@@ -53,15 +35,7 @@ else coin_text = "Coins: "
 #endregion
 
 #region //room switch handling
-if keyboard_check_pressed(vk_enter) and room = rm_mainmenu and global.menu = 0
-{
-	global.menu = 0
-	room_goto(rm_map1)
-}
-if global.menu = 1 and keyboard_check_pressed(vk_enter) and room = rm_mainmenu
-{
-	game_end()
-}
+
 if keyboard_check_pressed(ord("N"))
 {
 room_goto_next()

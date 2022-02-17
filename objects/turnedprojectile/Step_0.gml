@@ -1,3 +1,4 @@
+/*
 movetime=+1
 if movetime >= 30 
 {
@@ -19,3 +20,4 @@ else
 {
 x=x+3	
 }
+*/

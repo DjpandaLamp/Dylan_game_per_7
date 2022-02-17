@@ -20,22 +20,14 @@ if vspd > 12.5 vspd = 12.5
 
 #region //Movement and sprite
     
-if place_meeting(x,y+1,floor3) or place_meeting(x,y+1,fallingbricksObj)
-    {
-    on_ground = true
-    jump = true
-    }
-else on_ground = false
+
     
 if on_ground 
 {
     jump = false
     fox_timer = fox_max
 }
-else
-{
 
-}
 
 if keyboard_check_pressed(vk_up) 
     {
@@ -94,6 +86,9 @@ else
 #endregion
 
 #region //Ground and wall colision + Jumping
+
+
+
 if place_meeting(x,y+vspd,fallingbricksObj)
 {
 var fb
@@ -105,7 +100,9 @@ if(place_meeting(x,y+vspd, fallingbricksObj))  and fb.sprite_index = fallingbric
     {
         y = y+(sign(vspd));
     moving = false
+	
     }
+
     fallspeed = 0
     vspd = 0;
 } 
@@ -116,12 +113,27 @@ if(place_meeting(x+hspd,y, fallingbricksObj)) and fb.sprite_index = fallingbrick
     {
         x = x+(sign(hspd));
        moving = false
+	  
    }
-	 hspd = 0;
+	hspd = 0;
+	
 }
    
 
 }
+if place_meeting(x,y+1,floor3) or (place_meeting(x,y+1, fallingbricksObj))  and fb.sprite_index = fallingbricks1_spt or (place_meeting(x,y+1, fallingbricksObj))  and fb.sprite_index = fallingbricks2_spt
+    {
+    on_ground = true
+    jump = true
+    }
+else on_ground = false
+
+
+
+
+
+	
+
 
 
 

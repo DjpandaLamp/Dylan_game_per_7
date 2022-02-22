@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 4,
-  "bbox_right": 47,
-  "bbox_top": 4,
-  "bbox_bottom": 40,
+  "bbox_left": 0,
+  "bbox_right": 0,
+  "bbox_top": 0,
+  "bbox_bottom": 0,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,15 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"18408c47-919f-4439-ae14-66fe6621c9c1","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"18408c47-919f-4439-ae14-66fe6621c9c1","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"LayerId":{"name":"8c74ac0f-9f61-480a-8a65-c34ad8cc3ce6","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"fallingbricks6_spt","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"resourceVersion":"1.0","name":"18408c47-919f-4439-ae14-66fe6621c9c1","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"98f6bc8e-5dbe-451e-b2ac-af048791c3e3","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"98f6bc8e-5dbe-451e-b2ac-af048791c3e3","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"LayerId":{"name":"8c74ac0f-9f61-480a-8a65-c34ad8cc3ce6","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"fallingbricks6_spt","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"resourceVersion":"1.0","name":"98f6bc8e-5dbe-451e-b2ac-af048791c3e3","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"175b06a4-a698-4099-a993-87431769f168","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"175b06a4-a698-4099-a993-87431769f168","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"LayerId":{"name":"8c74ac0f-9f61-480a-8a65-c34ad8cc3ce6","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"fallingbricks6_spt","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"resourceVersion":"1.0","name":"175b06a4-a698-4099-a993-87431769f168","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"dc0b4113-c551-4802-abf0-2541cdc59734","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"dc0b4113-c551-4802-abf0-2541cdc59734","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"LayerId":{"name":"8c74ac0f-9f61-480a-8a65-c34ad8cc3ce6","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"fallingbricks6_spt","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"resourceVersion":"1.0","name":"dc0b4113-c551-4802-abf0-2541cdc59734","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"fallingbricks6_spt","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},
@@ -42,14 +36,12 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 3.0,
+    "length": 1.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"5b1051d7-741d-456b-902f-9d62babc00b7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"18408c47-919f-4439-ae14-66fe6621c9c1","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"b11324cd-3214-4b40-96ba-2c00e2392678","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"98f6bc8e-5dbe-451e-b2ac-af048791c3e3","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"df759616-a3e5-4441-ac52-f2a5ddaacdb2","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"175b06a4-a698-4099-a993-87431769f168","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"46a6d814-f290-469a-a619-e00a126bab2f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dc0b4113-c551-4802-abf0-2541cdc59734","path":"sprites/fallingbricks6_spt/fallingbricks6_spt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,

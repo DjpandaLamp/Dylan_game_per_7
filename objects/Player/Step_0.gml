@@ -65,12 +65,12 @@ if keyboard_check(vk_left)
         dir = 3
         moving = true
     } 
-if place_meeting(x,y+1,floor3)
+if place_meeting(x,y+1,floor3) 
     {
     on_ground = true
     jump = true
     }
-else on_ground = false
+
     
 if on_ground 
 {
@@ -91,42 +91,42 @@ else
 
 if place_meeting(x,y+vspd,fallingbricksObj)
 {
-var fb
-fb=instance_place(x,y+vspd,fallingbricksObj)
+	var fb
+	fb=instance_place(x,y+vspd,fallingbricksObj)
 
-if(place_meeting(x,y+vspd, fallingbricksObj))  and fb.sprite_index = fallingbricks1_spt or (place_meeting(x,y+vspd, fallingbricksObj))  and fb.sprite_index = fallingbricks2_spt
-{
-    while(!place_meeting(x,y+sign(vspd),fallingbricksObj))
-    {
-        y = y+(sign(vspd));
-    moving = false
+	if(place_meeting(x,y+vspd, fallingbricksObj))  and fb.sprite_index = fallingbricks1_spt or (place_meeting(x,y+vspd, fallingbricksObj))  and fb.sprite_index = fallingbricks2_spt
+	{
+	    while(!place_meeting(x,y+sign(vspd),fallingbricksObj))
+	    {
+	        y = y+(sign(vspd));
+	    moving = false
 	
-    }
+	    }
 
-    fallspeed = 0
-    vspd = 0;
-} 
+	    fallspeed = 0
+	    vspd = 0;
+	} 
 
-if(place_meeting(x+hspd,y, fallingbricksObj)) and fb.sprite_index = fallingbricks1_spt or (place_meeting(x+hspd,y, fallingbricksObj)) and fb.sprite_index = fallingbricks2_spt
-{
-    while(!place_meeting(x+sign(hspd),y,fallingbricksObj))
-    {
-        x = x+(sign(hspd));
-       moving = false
+	if(place_meeting(x+hspd,y, fallingbricksObj)) and fb.sprite_index = fallingbricks1_spt or (place_meeting(x+hspd,y, fallingbricksObj)) and fb.sprite_index = fallingbricks2_spt
+	{
+	    while(!place_meeting(x+sign(hspd),y,fallingbricksObj))
+	    {
+	        x = x+(sign(hspd));
+	       moving = false
 	  
-   }
-	hspd = 0;
+	   }
+		hspd = 0;
 	
-}
-   
+	}
+   if(place_meeting(x,y+1, fallingbricksObj))  and fb.sprite_index = fallingbricks1_spt or (place_meeting(x,y+1, fallingbricksObj))  and fb.sprite_index = fallingbricks2_spt
+   {
+	on_ground = true
+    
+   }
 
 }
-if place_meeting(x,y+1,floor3) or (place_meeting(x,y+1, fallingbricksObj))  and fb.sprite_index = fallingbricks1_spt or (place_meeting(x,y+1, fallingbricksObj))  and fb.sprite_index = fallingbricks2_spt
-    {
-    on_ground = true
-    jump = true
-    }
-else on_ground = false
+
+
 
 
 
@@ -161,6 +161,7 @@ if(place_meeting(x,y+vspd, floor3))
     }
     fallspeed = 0
     vspd = 0;
+
 } 
 
 y=y+(vspd)
@@ -257,4 +258,8 @@ else
 if y < 400
 {
 	 global.uiPos = 0
+}
+if !place_meeting(x,y+1,fallingbricksObj) and !place_meeting(x,y+1,floor3)
+{
+on_ground = false	
 }

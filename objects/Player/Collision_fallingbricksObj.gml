@@ -9,6 +9,7 @@ if(place_meeting(x,y+vspd, fallingbricksObj))  and other.sprite_index = fallingb
     }
     fallspeed = 0
     vspd = 0;
+	
 } 
 
 if(place_meeting(x+hspd,y, fallingbricksObj)) and other.sprite_index = fallingbricks1_spt or (place_meeting(x+hspd,y, fallingbricksObj)) and other.sprite_index = fallingbricks2_spt
@@ -20,4 +21,3 @@ if(place_meeting(x+hspd,y, fallingbricksObj)) and other.sprite_index = fallingbr
    }
 	 hspd = 0;
 }
-   

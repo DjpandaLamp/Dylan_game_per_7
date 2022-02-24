@@ -1,26 +1,36 @@
-This is a code leftover bin, Please treat it well
-
-
-
-Old Attack code
-
-if keyboard_check_pressed(ord("Q")) and blaze_timer < 0
+if place_meeting(x,y+vspd,fallingbricksObj)
 {
-    blaze_timer = 5
-    blaze = true
-}
-if blaze_timer < 4
-{
-    blaze = false
-}
-else
-{
-    if dir = 2
-    {
-        sprite_index = playerfireright
-    }
-    if dir = 3
-    {
-        sprite_index = playerfireleft
-    }
+	var fb
+	fb=instance_place(x,y+vspd,fallingbricksObj)
+
+	if(place_meeting(x,y+vspd, fallingbricksObj))  and fb.sprite_index = fallingbricks1_spt or (place_meeting(x,y+vspd, fallingbricksObj))  and fb.sprite_index = fallingbricks2_spt
+	{
+	    while(!place_meeting(x,y+sign(vspd),fallingbricksObj))
+	    {
+	        y = y+(sign(vspd));
+	    moving = false
+	
+	    }
+
+	    fallspeed = 0
+	    vspd = 0;
+	} 
+
+	if(place_meeting(x+hspd,y, fallingbricksObj)) and fb.sprite_index = fallingbricks1_spt or (place_meeting(x+hspd,y, fallingbricksObj)) and fb.sprite_index = fallingbricks2_spt
+	{
+	    while(!place_meeting(x+sign(hspd),y,fallingbricksObj))
+	    {
+	        x = x+(sign(hspd));
+	       moving = false
+	  
+	   }
+		hspd = 0;
+	
+	}
+   if(place_meeting(x,y+1, fallingbricksObj))  and fb.sprite_index = fallingbricks1_spt or (place_meeting(x,y+1, fallingbricksObj))  and fb.sprite_index = fallingbricks2_spt
+   {
+	on_ground = true
+    
+   }
+
 }

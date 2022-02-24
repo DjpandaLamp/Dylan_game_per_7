@@ -1,0 +1,2 @@
+CheckCollisionsX()
+CheckCollisionsY()

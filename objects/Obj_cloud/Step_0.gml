@@ -1,3 +1,5 @@
+if global.interact = 0
+{
 x -=1
 
 if x < -96
@@ -7,4 +9,5 @@ if x < -96
 if y < -96
 {
 	instance_destroy(self)
+}
 }

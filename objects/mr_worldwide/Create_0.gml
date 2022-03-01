@@ -4,6 +4,7 @@ global.health = 6
 global.coins = 0
 global.points = 0
 global.menu = 0
+global.interact = 0
 coin_text = "Coins: "
 cloud_spawning = false	
 cloud_timer = 0
@@ -13,3 +14,9 @@ blaze_check = "Ready"
 range=192
 game_set_speed(60, gamespeed_fps);
 randomize()
+
+ini_open("datafiles/savedata.ini")
+{
+	ini_write_string("test2", "section", "Welcome");
+	ini_close()
+}

@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+if global.interact = 0
+{
 pulsetimer +=1/room_speed
 
 
@@ -11,4 +13,5 @@ image_angle = point_direction(x,y,Player.x,Player.y)-270
 speed = 6 +point_distance(x,y,Player.x,Player.y)/1000
 pulsetimer = 0
 	
+}
 }

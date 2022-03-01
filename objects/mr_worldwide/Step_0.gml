@@ -1,6 +1,13 @@
 /// @description Insert description here
 // You can write your code in this edi
-
+if keyboard_check_pressed(vk_escape)
+{
+	if global.interact = 1
+	{
+		global.interact = 0	
+	}
+	else global.interact = 1
+}
 
 
 

@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+if global.interact = 0
+{
+
 if(place_meeting(x,y+vspd, fallingbricksObj))  and other.sprite_index = fallingbricks1_spt or (place_meeting(x,y+vspd, fallingbricksObj))  and other.sprite_index = fallingbricks2_spt
 {
     while(!place_meeting(x,y+sign(vspd),fallingbricksObj))
@@ -20,4 +23,5 @@ if(place_meeting(x+hspd,y, fallingbricksObj)) and other.sprite_index = fallingbr
        moving = false
    }
 	 hspd = 0;
+}
 }

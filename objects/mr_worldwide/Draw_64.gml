@@ -10,7 +10,7 @@ if  room!=rm_mainmenu
 {
 	draw_set_color(c_white)
 	draw_sprite_ext(ui_sprite,0,16,518+global.uiPos,7,7,0,c_white,1)
-	draw_text(32,598+global.uiPos, coin_text + string(global.coins))
+	draw_text(32,598+global.uiPos, coin_text + keyboard_string)
 	draw_text(32,630+global.uiPos, "Health: " + string(global.health))
 	draw_text(32,566+global.uiPos, "Time: " + string(floor(Player.roomtimer)))
 
@@ -27,4 +27,10 @@ if  room!=rm_mainmenu
 	draw_rectangle(34,664+global.uiPos,190,648+76+global.uiPos,1)
 	draw_rectangle(35,665+global.uiPos,189,648+75+global.uiPos,1)
 }
-
+if global.interact = 1
+{
+	
+	
+	
+	
+}

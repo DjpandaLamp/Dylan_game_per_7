@@ -1,23 +1,9 @@
-/*
-movetime=+1
-if movetime >= 30 
+if global.interact = 0
 {
-if dire = 0
+speed = 3
+	
+}
+if global.interact = 1
 {
-	dire = 1
+	speed = 0
 }
-if dire = 1 
-{
-	dire = 0
-}
-movetime = 0
-}
-if dire = 0 
-{
-x=x-3
-}
-else
-{
-x=x+3	
-}
-*/

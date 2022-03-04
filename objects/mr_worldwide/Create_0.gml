@@ -1,6 +1,9 @@
 global.uiPos = 0
 global.plot_value = 0
 global.health = 6
+global.healthmax = 6
+global.attack = 20
+global.attackmax = 20
 global.coins = 0
 global.points = 0
 global.menu = 0

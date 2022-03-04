@@ -3,8 +3,13 @@ if global.interact = 0
 	image_speed = 1
 	TimerCheck()
 	CheckInputs()
+	vspd = vspd+fallspeed
+	if vspd > 12.5 vspd = 12.5
+	
 	StateMoving()
-    
+	
+	
+    #region //collision
 	CheckCollisionsX()
 	CheckCollisionsFX()
 
@@ -14,7 +19,8 @@ if global.interact = 0
 	CheckCollisionFY()
 
 	y=y+(vspd)
-
+	#endregion
+	
 	if y>room_height
 	{
 	   PlayerDeath()  

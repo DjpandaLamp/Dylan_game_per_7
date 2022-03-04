@@ -2,8 +2,11 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function StateAttack(){
 
-if keyboard_check_pressed(vk_escape) 
+
+
+if keyboard_check_pressed(vk_control) and global.attack > 0
 {
+	global.attack -=1
 	if dir = 3
 	{
 		Attacking = true

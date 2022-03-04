@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite52",
-    "path": "sprites/Sprite52/Sprite52.yy",
+    "name": "light_orb_spr",
+    "path": "sprites/light_orb_spr/light_orb_spr.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "other objects",
-    "path": "folders/Objects/other objects.yy",
+    "name": "Power-ups",
+    "path": "folders/Objects/Power-ups.yy",
   },
   "resourceVersion": "1.0",
   "name": "light_orb",

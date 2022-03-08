@@ -6,10 +6,21 @@ if global.interact = 0
 	vspd = vspd+fallspeed
 	if vspd > 12.5 vspd = 12.5
 	
+if state = States.AttackState
+{
+	StateAttack()
+}
+if state = States.IdleState
+{
+	IdleScript()
+}
+if state = States.MovingState
+{
 	StateMoving()
-	
-	
-    #region //collision
+}
+
+
+    #region //Collision
 	CheckCollisionsX()
 	CheckCollisionsFX()
 
@@ -28,7 +39,7 @@ if global.interact = 0
 
 	if inv_time < 0  effect_clear()
 
-	StateAttack()
+	
 	SpriteSet()
 
 
@@ -46,3 +57,8 @@ if global.interact = 0
 	}
 }
 else image_speed = 0
+
+
+
+
+

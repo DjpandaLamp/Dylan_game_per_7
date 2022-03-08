@@ -15,6 +15,13 @@ cloud_random = random_range(120,170)
 cloud_chance = random(1)
 blaze_check = "Ready"
 range=192
+enum States 
+{
+	IdleState,
+	MovingState,
+	AttackState,
+}
+
 game_set_speed(60, gamespeed_fps);
 randomize()
 

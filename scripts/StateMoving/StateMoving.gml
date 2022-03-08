@@ -1,6 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function StateMoving(){
+if keyboard_check(vk_lshift) speed_mult = 2
+hspd = ((keyboard_check(vk_right)-keyboard_check(vk_left))*speed_mult*5)
+
 if keyboard_check_pressed(vk_up) 
     {
        
@@ -50,4 +53,48 @@ if on_ground
 }
 
 
+if keyboard_check_pressed(vk_control) and global.attack > 0
+{
+pstate = state
+state = States.AttackState
+}
+
+
+
+//Exit State
+if !keyboard_check(vk_up) and !keyboard_check(vk_right) and !keyboard_check(vk_left) 
+{	
+state = States.IdleState	
+}
+
+
+
+}	
+
+function IdleScript(){
+	if dir = 3
+	{
+		{
+			sprite_index = playeridleleft
+		}
+	}
+	else if dir = 2
+		{
+			sprite_index = playeridleright
+		}
+	}
+
+//exit state
+if keyboard_check_pressed(vk_control) and global.attack > 0
+{
+pstate = state
+state = States.AttackState
+}
+if keyboard_check(vk_up) or keyboard_check(vk_right) or keyboard_check(vk_left) 
+{	
+moving = true	
+}
+if moving = true
+{
+state = States.IdleState	
 }

@@ -2,10 +2,6 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function StateAttack(){
 
-
-
-if keyboard_check_pressed(vk_control) and global.attack > 0
-{
 	global.attack -=1
 	if dir = 3
 	{
@@ -13,20 +9,25 @@ if keyboard_check_pressed(vk_control) and global.attack > 0
 		sprite_index = Playerattackleft
 		instance_create_depth(x-96,y-32,0,attackhitbox)
 	}
-	if dir = 2
+	else if dir = 2
 	{
 		Attacking = true
 		sprite_index = Playerattackright
 		instance_create_depth(x+32,y-32,0,attackhitbox)
 	}
-}
+
+
+
 
 if !instance_exists(attackhitbox)
 {
 Attacking = false	
 }
-
-
+//EXIT STATE
+if Attacking = false
+{
+	state = States.MovingState
+}
 
 
 function SpriteSet(){

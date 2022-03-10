@@ -5,7 +5,8 @@ function TimerCheck(){
 	roomtimer -= 1.5/room_speed
 	buffer_timer -=1
 	inv_time -=1/room_speed
-
+	attackwait -=1
+	
 	fallspeed = .75
 	fox_timer -=1
 

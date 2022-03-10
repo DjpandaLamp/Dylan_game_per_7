@@ -52,3 +52,15 @@ if global.interact = 1
 	
 	
 }
+
+if global.debug = 1
+{
+	draw_set_color(c_black)
+	draw_text(32, 32,"Refill Attack: E")
+	draw_text(32, 64,"Refill Health: H")
+	draw_text(32,96,"Switch level: P or N, for Prior or Next-_-")
+	draw_text(32, 128, "Level: " + string(room_get_name(room)))
+	draw_text(32,160, "Plot_Value: " + string(global.plot_value))
+	draw_text(32,192, "Change Plot value: O or L")
+	
+}

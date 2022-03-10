@@ -10,6 +10,7 @@ speed_mult = 1
 fallspeed = 0
 jumpspeed = -16
 inv_time = 0
+attackwait = 10
 
 
 on_ground = true
@@ -22,7 +23,16 @@ buffer_max = 5 //What buffer is set when input
 
 
 
+enum States 
+{
+	IdleState,
+	MovingState,
+	AttackState,
+}
 
+state_array[States.IdleState] = IdleScript
+state_array[States.AttackState] = StateAttack
+state_array[States.MovingState] = StateMoving
 
 state = States.MovingState
 pstate = 0

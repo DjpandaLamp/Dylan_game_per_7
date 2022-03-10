@@ -1,23 +1,15 @@
 if global.interact = 0
 {
+	
+
+	
 	image_speed = 1
 	TimerCheck()
 	CheckInputs()
 	vspd = vspd+fallspeed
 	if vspd > 12.5 vspd = 12.5
 	
-if state = States.AttackState
-{
-	StateAttack()
-}
-if state = States.IdleState
-{
-	IdleScript()
-}
-if state = States.MovingState
-{
-	StateMoving()
-}
+	script_execute(state_array[state])
 
 
     #region //Collision

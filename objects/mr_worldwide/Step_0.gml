@@ -67,6 +67,34 @@ if cloud_spawning = true
 }
 }
 #endregion
+if keyboard_check_pressed(ord("D"))
+{
+if global.debug = 1 
+{
+	global.debug = 0
+}
+else 
+{
+global.debug = 1
+}
+}
 
-
-
+if global.debug = 1
+{
+if keyboard_check_pressed(ord("E"))
+	{
+	global.attack = global.attackmax	
+	}
+	if keyboard_check_pressed(ord("H"))
+	{
+	global.health = global.healthmax	
+	}
+	if keyboard_check_pressed(ord("O"))
+	{
+	global.plot_value +=1	
+	}
+	if keyboard_check_pressed(ord("L"))
+	{
+	global.plot_value -=1	
+	}
+}

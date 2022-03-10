@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 attacktimer +=1 
-if attacktimer >= 20
+if attacktimer >= 9
 {
 instance_destroy(self)
 }

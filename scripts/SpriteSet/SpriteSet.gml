@@ -1,25 +1,12 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function SpriteSet(argument0, argument1){
+function SpriteSet(){
 	
-	if argument0 = 3
+if Attacking = false
+{
+	if dir = 3 
 	{
-		{
-			sprite_index = playeridleleft
-		}
-	}
-	else if argument0 = 2
-		{
-			sprite_index = playeridleright
-		}
-	}
-
-
-function SpriteSetRunning(argument0){
-
-	if argument0 = 3
-	{
-		if argument1 = 1
+		if moving
 		{
 			sprite_index = playerrunleft
 		}
@@ -28,9 +15,9 @@ function SpriteSetRunning(argument0){
 			sprite_index = playeridleleft
 		}
 	}
-	else if argument0 = 2
+	else if dir = 2
 		{
-		if argument1 = 1
+		if moving
 		{
 			sprite_index = playerrunright
 		}
@@ -39,4 +26,5 @@ function SpriteSetRunning(argument0){
 			sprite_index = playeridleright
 		}
 	}
+}
 }

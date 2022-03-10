@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "other objects",
-    "path": "folders/Objects/other objects.yy",
+    "name": "Power-ups",
+    "path": "folders/Objects/Power-ups.yy",
   },
   "resourceVersion": "1.0",
   "name": "health_pot",

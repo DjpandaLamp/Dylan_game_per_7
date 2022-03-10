@@ -70,31 +70,3 @@ state = States.IdleState
 
 
 }	
-
-function IdleScript(){
-	if dir = 3
-	{
-		{
-			sprite_index = playeridleleft
-		}
-	}
-	else if dir = 2
-		{
-			sprite_index = playeridleright
-		}
-	}
-
-//exit state
-if keyboard_check_pressed(vk_control) and global.attack > 0
-{
-pstate = state
-state = States.AttackState
-}
-if keyboard_check(vk_up) or keyboard_check(vk_right) or keyboard_check(vk_left) 
-{	
-moving = true	
-}
-if moving = true
-{
-state = States.IdleState	
-}

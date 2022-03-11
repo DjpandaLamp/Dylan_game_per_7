@@ -1,5 +1,16 @@
 /// @description Insert description here
 // You can write your code in this edi
+if global.attack > global.attackmax
+{
+global.attack = global.attackmax	
+}
+if global.health > global.healthmax
+{
+global.health = global.healthmax
+}
+
+
+
 if keyboard_check_pressed(vk_escape)
 {
 	if global.interact = 1
@@ -98,3 +109,6 @@ if keyboard_check_pressed(ord("E"))
 	global.plot_value -=1	
 	}
 }
+
+
+

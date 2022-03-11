@@ -30,6 +30,7 @@
     {"id":{"name":"PowerUpScript","path":"scripts/PowerUpScript/PowerUpScript.yy",},"order":8,},
     {"id":{"name":"Sprite48","path":"sprites/Sprite48/Sprite48.yy",},"order":21,},
     {"id":{"name":"playerrunright","path":"sprites/playerrunright/playerrunright.yy",},"order":4,},
+    {"id":{"name":"ThePlane","path":"sounds/ThePlane/ThePlane.yy",},"order":0,},
     {"id":{"name":"health_pot_up","path":"objects/health_pot_up/health_pot_up.yy",},"order":1,},
     {"id":{"name":"playerfireleft","path":"sprites/playerfireleft/playerfireleft.yy",},"order":5,},
     {"id":{"name":"IdleScript","path":"scripts/IdleScript/IdleScript.yy",},"order":10,},

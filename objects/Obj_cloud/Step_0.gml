@@ -1,6 +1,6 @@
 if global.interact = 0
 {
-x -=1
+x -=1+(rspeed)
 
 if x < -96
 {

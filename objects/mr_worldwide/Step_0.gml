@@ -35,17 +35,6 @@ if global.coins < 0
 else coin_text = "Coins: "
 #endregion
 
-#region //room switch handling
-
-if keyboard_check_pressed(ord("N"))
-{
-room_goto_next()
-}
-if keyboard_check_pressed(ord("P"))
-{
-	room_goto_previous()
-}
-#endregion
 
 #region //background clouds spawner
 if global.interact = 0
@@ -108,7 +97,27 @@ if keyboard_check_pressed(ord("E"))
 	{
 	global.plot_value -=1	
 	}
+	
+if keyboard_check_pressed(ord("N"))
+{
+room_goto_next()
 }
-
+if keyboard_check_pressed(ord("P"))
+{
+	room_goto_previous()
+}
+	
+	
+	
+	
+}
+if room = rm_map1
+{
+roomcolor = c_black
+}
+if room = rm_al
+{
+roomcolor = c_white
+}
 
 

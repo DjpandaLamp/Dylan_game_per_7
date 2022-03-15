@@ -99,3 +99,41 @@ if place_meeting(x,y+vspd,fallingbricksObj)
 }
 }
 
+
+
+
+
+function CheckCollisionsTX(){
+//What to do
+if(place_meeting(x+hspd,y, turned_totorial)) 
+{
+    while(!place_meeting(x+sign(hspd),y,turned_totorial))
+    {
+        x = x+(sign(hspd));
+        moving = false
+    }
+	
+    hspd = 0;
+} 
+//what animation to play
+
+
+
+//how to exit
+
+}
+
+function CheckCollisionsTY(){
+//What to do
+	if(place_meeting(x,y+vspd, turned_totorial)) 
+	{
+	    while(!place_meeting(x,y+sign(vspd),turned_totorial))
+	    {
+	        y = y+(sign(vspd));
+	    moving = false
+	    }
+	    fallspeed = 0
+	    vspd = 0;
+
+	} 
+}

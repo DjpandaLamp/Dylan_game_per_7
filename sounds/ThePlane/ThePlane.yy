@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "ThePlane.mp3",
-  "duration": 51.22608,
+  "duration": 48.0391655,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

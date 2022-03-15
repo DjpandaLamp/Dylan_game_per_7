@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "clouds",
-    "path": "sprites/clouds/clouds.yy",
+    "name": "Enemy_Blast_perma",
+    "path": "sprites/Enemy_Blast_perma/Enemy_Blast_perma.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,11 +27,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "other objects",
-    "path": "folders/Objects/other objects.yy",
+    "name": "enemy",
+    "path": "folders/Objects/enemy.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Obj_cloud",
+  "name": "turned_totorial",
   "tags": [],
   "resourceType": "GMObject",
 }

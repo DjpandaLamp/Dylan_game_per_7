@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "clouds",
-    "path": "sprites/clouds/clouds.yy",
+    "name": "Sprite53",
+    "path": "sprites/Sprite53/Sprite53.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,10 +20,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -31,7 +28,7 @@
     "path": "folders/Objects/other objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Obj_cloud",
+  "name": "totor",
   "tags": [],
   "resourceType": "GMObject",
 }

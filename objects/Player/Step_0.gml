@@ -14,11 +14,13 @@ if global.interact = 0
 
     #region //Collision
 	CheckCollisionsX()
+	CheckCollisionsTX()
 	CheckCollisionsFX()
 
 	x=x+(hspd)
 
 	CheckCollisionsY()
+	CheckCollisionsTY()
 	CheckCollisionFY()
 
 	y=y+(vspd)

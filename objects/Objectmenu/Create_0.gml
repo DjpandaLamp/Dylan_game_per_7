@@ -1,8 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 //Create event
-Menu_array=["New Game","Load game","Exit Game"]
-Load_array=["EMPTY","EMPTY","EMPTY"]
+
 
 
 t = 0;

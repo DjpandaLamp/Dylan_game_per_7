@@ -2,18 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function IdleScript(){
 
-if instance_exists(Player)
-	{
-		if dir = 3
-		{
-			{
-				sprite_index = playeridleleft
-			}
-		}
-		else if dir = 2
-			{
-				sprite_index = playeridleright
-			}
+{
 	
 
 	//exit state

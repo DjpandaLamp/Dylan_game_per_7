@@ -11,15 +11,16 @@ if global.attack !=0 and !instance_exists(attackhitbox) and attackwait <= 0
 	if dir = 3
 	{
 		Attacking = true
-		sprite_index = Playerattackleft
+		
 		instance_create_depth(x-96,y-32,0,attackhitbox)
 	}
-	else if dir = 2
+	if dir = 2
 	{
 		Attacking = true
-		sprite_index = Playerattackright
-		instance_create_depth(x+32,y-32,0,attackhitbox)
+		
+		instance_create_depth(x-96,y-32,0,attackhitbox)
 	}
+
 }
 
 

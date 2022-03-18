@@ -10,7 +10,7 @@ if global.interact = 0
 	if vspd > 12.5 vspd = 12.5
 	
 	script_execute(state_array[state])
-
+	
 
     #region //Collision
 	CheckCollisionsX()
@@ -34,8 +34,15 @@ if global.interact = 0
 	if inv_time < 0  effect_clear()
 
 	
-	SpriteSet()
 
+if dir = 3 
+{
+image_xscale = -1	
+}
+else
+{
+image_xscale = 1	
+}
 
 	if x < 300
 	{
@@ -49,6 +56,9 @@ if global.interact = 0
 	{
 		 global.uiPos = 0
 	}
+	
+	
+	sprite_index = sprite_array[state]
 }
 else image_speed = 0
 

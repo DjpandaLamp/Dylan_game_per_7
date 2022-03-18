@@ -34,5 +34,9 @@ state_array[States.IdleState] = IdleScript
 state_array[States.AttackState] = StateAttack
 state_array[States.MovingState] = StateMoving
 
+sprite_array[States.IdleState] = playeridleright
+sprite_array[States.AttackState] = Playerattackright
+sprite_array[States.MovingState] = playerrunright
+
 state = States.MovingState
 pstate = 0

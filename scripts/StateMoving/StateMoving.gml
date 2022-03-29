@@ -1,8 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function StateMoving(){
-if keyboard_check(vk_lshift) speed_mult = 2
-hspd = ((keyboard_check(vk_right)-keyboard_check(vk_left))*speed_mult*5)
+
+hspd = ((keyboard_check(vk_right)-keyboard_check(vk_left)))*5
 
 if keyboard_check_pressed(vk_up) 
     {

@@ -11,13 +11,11 @@ if global.attack !=0 and !instance_exists(attackhitbox) and attackwait <= 0
 	if dir = 3
 	{
 		Attacking = true
-		
 		instance_create_depth(x-96,y-32,0,attackhitbox)
 	}
 	if dir = 2
 	{
 		Attacking = true
-		
 		instance_create_depth(x-96,y-32,0,attackhitbox)
 	}
 

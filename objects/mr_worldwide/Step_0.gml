@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this edi
+
+
+
 if global.attack > global.attackmax
 {
 global.attack = global.attackmax	
@@ -114,10 +117,12 @@ if keyboard_check_pressed(ord("P"))
 if room = rm_map1
 {
 roomcolor = c_black
+global.checkpoint = 0
 }
 if room = rm_al
 {
 roomcolor = c_white
 }
+
 
 

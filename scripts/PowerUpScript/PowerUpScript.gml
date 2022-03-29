@@ -41,6 +41,7 @@ function AttackRestore(){
 
 function HealthUp(){
 	
+	if global.attackmax < 7
 	global.healthmax +=1
 }
 
@@ -51,7 +52,10 @@ function AttackUp(){
 
 function HealthDown(){
 	
+	if global.healthmax > 2
+	{
 		global.healthmax -=1
+	}
 }
 
 function AttackDown(){

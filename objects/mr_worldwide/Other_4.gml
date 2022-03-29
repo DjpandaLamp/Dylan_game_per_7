@@ -8,3 +8,9 @@ else if room = rm_map1
 {
 	audio_stop_all()
 }
+if global.checkpoint = 1
+{
+Player.x = global.reX+64
+Player.y = global.reY+96
+}
+

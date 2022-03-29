@@ -61,13 +61,8 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"floor3","path":"objects/floor3/floor3.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1104.0,"y":336.0,"resourceVersion":"1.0","name":"inst_1C7E28DC","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"floor3","path":"objects/floor3/floor3.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":-0.0148417056,"scaleX":1.0,"scaleY":9.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1344.0,"y":-192.0,"resourceVersion":"1.0","name":"inst_474D822F","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"floor3","path":"objects/floor3/floor3.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":9.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":336.0,"resourceVersion":"1.0","name":"inst_69359654","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[
-            {"propertyId":{"name":"directionline","path":"objects/turnedflower/turnedflower.yy",},"objectId":{"name":"turnedflower","path":"objects/turnedflower/turnedflower.yy",},"value":"0","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"turnedflower","path":"objects/turnedflower/turnedflower.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":752.0,"y":576.0,"resourceVersion":"1.0","name":"inst_1036BB68","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"turnedflower","path":"objects/turnedflower/turnedflower.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":848.0,"y":576.0,"resourceVersion":"1.0","name":"inst_30D464E5","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[
-            {"propertyId":{"name":"directionline","path":"objects/turnedflower/turnedflower.yy",},"objectId":{"name":"turnedflower","path":"objects/turnedflower/turnedflower.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"turnedflower","path":"objects/turnedflower/turnedflower.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":90.07996,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1344.0,"y":208.0,"resourceVersion":"1.0","name":"inst_51517A9C","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"checkpoint","path":"objects/checkpoint/checkpoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":176.0,"y":448.0,"resourceVersion":"1.0","name":"inst_5F056A4B","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"checkpoint","path":"objects/checkpoint/checkpoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":448.0,"resourceVersion":"1.0","name":"inst_76967AFE","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":29,"SerialiseHeight":16,"TileSerialiseData":[
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,
@@ -127,9 +122,8 @@
     {"name":"inst_1C7E28DC","path":"rooms/rm_map1/rm_map1.yy",},
     {"name":"inst_474D822F","path":"rooms/rm_map1/rm_map1.yy",},
     {"name":"inst_69359654","path":"rooms/rm_map1/rm_map1.yy",},
-    {"name":"inst_1036BB68","path":"rooms/rm_map1/rm_map1.yy",},
-    {"name":"inst_30D464E5","path":"rooms/rm_map1/rm_map1.yy",},
-    {"name":"inst_51517A9C","path":"rooms/rm_map1/rm_map1.yy",},
+    {"name":"inst_5F056A4B","path":"rooms/rm_map1/rm_map1.yy",},
+    {"name":"inst_76967AFE","path":"rooms/rm_map1/rm_map1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

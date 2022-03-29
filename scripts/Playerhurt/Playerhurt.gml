@@ -26,6 +26,9 @@ function PlayerDeath(){
 	global.points = global.points - 200
 	global.health = global.healthmax
 	global.attack = global.attackmax
+	
+	
 	room_restart()
+	
 	audio_stop_all()
 }

@@ -1,4 +1,4 @@
-roomtimer = 500
+roomtimer = 200
 jump = true
 moving = false
 Attacking = false

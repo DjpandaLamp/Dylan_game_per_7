@@ -44,17 +44,17 @@ else
 image_xscale = 1	
 }
 
-	if x < 300
+	if x < 400
 	{
-	    global.uiPos = -400
+	    uishift = -8
 	}
 	else
 	{
-	    global.uiPos = 0
+	    uishift = 8
 	}
 	if y < 400
 	{
-		 global.uiPos = 0
+		uishift = 8
 	}
 	
 	
@@ -63,6 +63,10 @@ image_xscale = 1
 else image_speed = 0
 
 
+
+
+
+global.uiPos = clamp(global.uiPos+uishift,-400,0)
 
 
 

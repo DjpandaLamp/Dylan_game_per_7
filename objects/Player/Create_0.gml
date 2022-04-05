@@ -11,7 +11,7 @@ fallspeed = 0
 jumpspeed = -16
 inv_time = 0
 attackwait = 10
-
+uishift = 0
 
 on_ground = true
 
@@ -40,3 +40,9 @@ sprite_array[States.MovingState] = playerrunright
 
 state = States.MovingState
 pstate = 0
+
+if !instance_exists(level_transtion)
+{
+	instance_create_depth(0,0,0,level_transtion)
+	
+}

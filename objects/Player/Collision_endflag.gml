@@ -9,6 +9,7 @@ if keyboard_check_pressed(vk_enter) and global.plot_value+1 = other.world_value
 		global.plot_value = other.world_value
 	}
 	var rm = asset_get_index(other.room_name)
-	room_goto(rm)
+	level_transtion.RoomTo = rm
+	level_transtion.fadeout = true
 }
 }

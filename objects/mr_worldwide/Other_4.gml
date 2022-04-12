@@ -1,5 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
+background_map = ds_map_create();
+background_map[? layer_get_id("background_near")] = 0;
+background_map[? layer_get_id("background_mid")] = 0.1;
+background_map[? layer_get_id("background_far")] = 0.2;
+
+
+
+
+
+
+
 if room = rm_1_1
 {
 audio_play_sound(ThePlane,1,1)	

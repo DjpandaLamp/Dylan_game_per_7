@@ -7,6 +7,12 @@ global.attackmax = 20
 global.coins = 0
 global.points = 0
 
+global.EnemiesSlain = 0
+
+
+
+
+
 global.interact = 0
 global.debug = 0
 

@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "other objects",
-    "path": "folders/Objects/other objects.yy",
+    "name": "backend objects",
+    "path": "folders/Objects/backend objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "mr_worldwide",

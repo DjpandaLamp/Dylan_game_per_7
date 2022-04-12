@@ -1,6 +1,33 @@
 /// @description Insert description here
 // You can write your code in this edi
 
+if !instance_exists(Player_flying)
+{
+fly_state = false
+}
+else
+{
+fly_state = true	
+}
+
+if fly_state = false
+{
+var _cx = camera_get_view_x(view_camera[0]);
+var _xspd = 5 * (keyboard_check(vk_right) - keyboard_check(vk_left));
+_cx += _xspd
+camera_set_view_pos(view_camera[0], _cx, 0);
+
+var _b = ds_map_find_first(background_map);
+repeat(ds_map_size(background_map))
+    {
+    layer_x(_b, background_map[? _b] * _cx);
+    _b = ds_map_find_next(background_map, _b);
+    }
+}
+
+
+
+
 
 
 if global.attack > global.attackmax
@@ -42,32 +69,17 @@ else coin_text = "Coins: "
 #region //background clouds spawner
 if global.interact = 0
 {
-if room = rm_mainmenu
-{
-	cloud_spawning = true
-	range=512
-}
-if room = rm_map1
-{
-	cloud_spawning = true
-	range=192
-}
-if room = rm_1_1
-{
-	cloud_spawning = false	
-}
-
-if cloud_spawning = true
-
-{
-	cloud_timer +=1
-	if cloud_timer > cloud_random
+	if fly_state = false
 	{
-	instance_create_depth(room_width,0+random(range),300,Obj_cloud)	
-	cloud_timer = 0
-	cloud_random = random_range(180,360)
+		cloud_timer +=1
+		if cloud_timer > cloud_random
+		{
+			instance_create_depth(room_width,0+random(range),300,Obj_cloud)	
+			cloud_timer = 0
+			cloud_random = random_range(180,360)
+		}
 	}
-}
+
 }
 #endregion
 if keyboard_check_pressed(ord("D"))

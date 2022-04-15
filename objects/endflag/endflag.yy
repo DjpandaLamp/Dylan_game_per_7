@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "endflag_spt",
-    "path": "sprites/endflag_spt/endflag_spt.yy",
+    "name": "PlaneEnd",
+    "path": "sprites/PlaneEnd/PlaneEnd.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -10,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "ThePlane.mp3",
-  "duration": 48.0391655,
+  "soundFile": "GreandForest.mp3",
+  "duration": 96.0260849,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ThePlane",
+  "name": "GreandForest",
   "tags": [],
   "resourceType": "GMSound",
 }

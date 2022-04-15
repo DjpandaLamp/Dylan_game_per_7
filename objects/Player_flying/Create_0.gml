@@ -1,1 +1,1 @@
-
+tallyscore = 0

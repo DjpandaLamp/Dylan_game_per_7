@@ -11,14 +11,19 @@ background_map[? layer_get_id("background_far")] = 0.2;
 
 
 
-if room = rm_1_1
+if room = rm_1_1 or room = rm_1_2
 {
-audio_play_sound(ThePlane,1,1)	
+audio_play_sound(GreandForest,1,1)	
 }
-else if room = rm_map1
+if room = rm_map1
 {
 	audio_stop_all()
 }
+
+
+
+
+
 if global.checkpoint = 1
 {
 Player.x = global.reX+64

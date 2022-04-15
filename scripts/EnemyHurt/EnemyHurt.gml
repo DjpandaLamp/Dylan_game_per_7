@@ -22,5 +22,6 @@ if !other.isInvincible
 
 function EnemyDeath(){
 instance_destroy(other)
+global.EnemiesSlain +=1
 global.coins +=1
 }

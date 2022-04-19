@@ -66,22 +66,7 @@ else coin_text = "Coins: "
 #endregion
 
 
-#region //background clouds spawner
-if global.interact = 0
-{
-	if fly_state = false
-	{
-		cloud_timer +=1
-		if cloud_timer > cloud_random
-		{
-			instance_create_depth(room_width,0+random(range),300,Obj_cloud)	
-			cloud_timer = 0
-			cloud_random = random_range(180,360)
-		}
-	}
 
-}
-#endregion
 if keyboard_check_pressed(ord("D"))
 {
 if global.debug = 1 

@@ -13,11 +13,15 @@ background_map[? layer_get_id("background_far")] = 0.2;
 
 if room = rm_1_1 or room = rm_1_2
 {
-audio_play_sound(GreandForest,1,1)	
+audio_play_sound(GreandForest,1,99)	
 }
 if room = rm_map1
 {
-	audio_stop_all()
+audio_play_sound(PlainsAndPlanes,1,99)	
+}
+if room = rm_1_fly
+{
+audio_play_sound(LevelComplete,1,0)	
 }
 
 

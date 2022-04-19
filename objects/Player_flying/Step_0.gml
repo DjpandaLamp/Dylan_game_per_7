@@ -9,10 +9,11 @@ else image_speed = 0
 
 if tallyscore > 12
 {
-if keyboard_check_pressed(vk_enter)
-{
-room = rm_map1	
-}
+	if keyboard_check_pressed(vk_enter)
+	{
+		level_transtion.RoomTo = rm_map1
+		level_transtion.fadeout = true
+	}
 	
 }
 

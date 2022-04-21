@@ -11,6 +11,7 @@ if(place_meeting(x+hspd,y, floor3))
     }
 	
     hspd = 0;
+
 } 
 //what animation to play
 
@@ -31,6 +32,7 @@ function CheckCollisionsY(){
 	    }
 	    fallspeed = 0
 	    vspd = 0;
+		JumpTime = 0
 
 	} 
 	
@@ -48,10 +50,10 @@ if !place_meeting(x,y+1,fallingbricksObj) and !place_meeting(x,y+1,floor3)
 
 function CheckCollisionsFX(){
 	
-if place_meeting(x,y+vspd,fallingbricksObj)
+if place_meeting(x,y+hspd,fallingbricksObj)
 {
 var fb
-fb=instance_place(x,y+vspd,fallingbricksObj)
+fb=instance_place(x,y+hspd,fallingbricksObj)
 
 if(place_meeting(x+hspd,y, fallingbricksObj)) and fb.sprite_index = fallingbricks1_spt or (place_meeting(x+hspd,y, fallingbricksObj)) and fb.sprite_index = fallingbricks2_spt
 	{
@@ -86,6 +88,7 @@ if place_meeting(x,y+vspd,fallingbricksObj)
 
 	    fallspeed = 0
 	    vspd = 0;
+		JumpTime = 0
 	} 
 
 
@@ -134,6 +137,7 @@ function CheckCollisionsTY(){
 	    }
 	    fallspeed = 0
 	    vspd = 0;
+		JumpTime = 0
 
 	} 
 }

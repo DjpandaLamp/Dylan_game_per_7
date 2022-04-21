@@ -11,6 +11,7 @@ function TimerCheck(){
 	buffer_timer -=1
 	inv_time -=1/room_speed
 	attackwait -=1
+	JumpTime +=1/room_speed
 	
 	fallspeed = .75
 	fox_timer -=1

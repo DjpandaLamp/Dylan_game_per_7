@@ -2,8 +2,16 @@ if global.interact = 0
 {
 	
 
-	
+	if sprite_index = PlayerJumpStart and image_index = 6
+	{
+	image_speed = 0
+	}
+	else
+	{
 	image_speed = 1
+	}
+	
+	
 	TimerCheck()
 	CheckInputs()
 	vspd = vspd+fallspeed
@@ -33,6 +41,15 @@ if global.interact = 0
 
 	if inv_time < 0  effect_clear()
 
+	if JumpTime < 0.350
+	{
+	sprite_array[States.JumpingState] = PlayerJumpStart
+	
+	}
+	else
+	{
+	sprite_array[States.JumpingState] = PlayerMidJump
+	}
 	
 
 if dir = 3 

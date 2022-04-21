@@ -12,6 +12,7 @@ jumpspeed = -16
 inv_time = 0
 attackwait = 10
 uishift = 0
+JumpTime = 0
 
 on_ground = true
 
@@ -28,15 +29,18 @@ enum States
 	IdleState,
 	MovingState,
 	AttackState,
+	JumpingState,
 }
 
 state_array[States.IdleState] = IdleScript
 state_array[States.AttackState] = StateAttack
 state_array[States.MovingState] = StateMoving
+state_array[States.JumpingState] = StateJumping
 
 sprite_array[States.IdleState] = playeridleright
 sprite_array[States.AttackState] = Playerattackright
 sprite_array[States.MovingState] = playerrunright
+sprite_array[States.JumpingState] = PlayerJumpStart
 
 state = States.MovingState
 pstate = 0

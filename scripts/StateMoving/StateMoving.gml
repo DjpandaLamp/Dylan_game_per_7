@@ -3,6 +3,7 @@
 function StateMoving(){
 if instance_exists(Player)
 {
+	JumpTimer = 0
 	hspd = ((keyboard_check(vk_right)-keyboard_check(vk_left)))*5
 
 if keyboard_check_pressed(vk_up) 

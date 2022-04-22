@@ -4,7 +4,7 @@ function IdleScript(){
 if instance_exists(Player)
 {
 {
-	
+	JumpTimer = 0
 
 	//exit state
 	if keyboard_check_pressed(vk_control) and global.attack > 0

@@ -76,6 +76,8 @@ image_xscale = 1
 	
 	
 	sprite_index = sprite_array[state]
+	
+	
 }
 else image_speed = 0
 

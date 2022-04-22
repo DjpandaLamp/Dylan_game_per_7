@@ -39,6 +39,7 @@
     {"id":{"name":"turned","path":"objects/turned/turned.yy",},"order":3,},
     {"id":{"name":"PowerUpScript","path":"scripts/PowerUpScript/PowerUpScript.yy",},"order":8,},
     {"id":{"name":"Sprite48","path":"sprites/Sprite48/Sprite48.yy",},"order":21,},
+    {"id":{"name":"floor33","path":"objects/floor33/floor33.yy",},"order":9,},
     {"id":{"name":"playerrunright","path":"sprites/playerrunright/playerrunright.yy",},"order":4,},
     {"id":{"name":"Enemy_Blast_perma","path":"sprites/Enemy_Blast_perma/Enemy_Blast_perma.yy",},"order":6,},
     {"id":{"name":"GreandForest","path":"sounds/GreandForest/GreandForest.yy",},"order":0,},

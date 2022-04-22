@@ -3,6 +3,7 @@
 function StateJumping(){
 if instance_exists(Player)
 {
+JumpTimer +=1/room_speed
 
 
 hspd = ((keyboard_check(vk_right)-keyboard_check(vk_left)))*5
@@ -67,20 +68,24 @@ pstate = state
 state = States.AttackState
 }
 
+
+
+
 if place_meeting(x,y+1,floor3) or place_meeting(x,y+1,fallingbricksObj) or place_meeting(x,y+1,turned_totorial)
 {
 	y=y-1
 }	
 
-
+if place_meeting(x,y+1,floor3) or place_meeting(x,y+1,fallingbricksObj) or place_meeting(x,y+1,turned_totorial) or JumpTimer = 5
+{
+state = States.IdleState	
+}
 //Exit State
 
 
-if place_meeting(x,y+1,floor3) or place_meeting(x,y+1,fallingbricksObj) or place_meeting(x,y+1,turned_totorial)
-{
-state = States.IdleState	
+	
 
-}
+
 
 
 

@@ -12,7 +12,7 @@ audio_play_sound(beep_se,1,0)
 
 if tallyscore > 7
 {
-draw_text(room_width/2.5,192,"Coins Gathered: "+string(global.coins) + " X 100 = " + string(200*global.coins))
+draw_text(room_width/2.5,192,"Coins Gathered: "+string(global.coins) + " X 100 = " + string(100*global.coins))
 }
 
 if tallyscore = 7
@@ -43,6 +43,6 @@ audio_play_sound(beep_se,1,0)
 
 if tallyscore > 12
 {
-draw_text(320,480,"Press Enter to Continue")
+draw_text(room_width/2.5,480,"Press Enter to Continue")
 }
 

@@ -1,4 +1,14 @@
+if room = rm_cs1
+{
+roomtimer = 5000000000000000000000000
+	
+}
+else
+{
 roomtimer = 200
+}
+
+
 jump = true
 moving = false
 Attacking = false
@@ -35,12 +45,12 @@ enum States
 state_array[States.IdleState] = IdleScript
 state_array[States.AttackState] = StateAttack
 state_array[States.MovingState] = StateMoving
-state_array[States.JumpingState] = StateJumping
+
 
 sprite_array[States.IdleState] = playeridleright
 sprite_array[States.AttackState] = Playerattackright
 sprite_array[States.MovingState] = playerrunright
-sprite_array[States.JumpingState] = PlayerJumpStart
+
 
 state = States.MovingState
 pstate = 0

@@ -1,6 +1,6 @@
 if global.interact = 0
 {
-	
+	sprite_index = sprite_array[state]
 
 	if sprite_index = PlayerJumpStart and image_index = 6
 	{
@@ -41,17 +41,17 @@ if global.interact = 0
 
 	if inv_time < 0  effect_clear()
 
-	if JumpTime < 0.350
+	if place_meeting(x,y+1,floor3) or place_meeting(x,y+1,turned_totorial) or place_meeting(x,y+1,fallingbricksObj)
 	{
-	sprite_array[States.JumpingState] = PlayerJumpStart
+	sprite_array[States.IdleState] = playeridleright
+	sprite_array[States.MovingState] = playerrunright
 	
 	}
 	else
 	{
-	sprite_array[States.JumpingState] = PlayerMidJump
+	sprite_array[States.MovingState] = PlayerMidJump
+	sprite_array[States.IdleState] = PlayerMidJump
 	}
-	
-
 if dir = 3 
 {
 image_xscale = -1	
@@ -75,7 +75,7 @@ image_xscale = 1
 	}
 	
 	
-	sprite_index = sprite_array[state]
+	
 	
 	
 }

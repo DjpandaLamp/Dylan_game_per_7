@@ -41,11 +41,7 @@ if instance_exists(Player)
 	
 	if moving = true
 	{
-		if keyboard_check(vk_up) 
-		{
-			state = States.JumpingState	
-		}
-		else
+	
 		state = States.MovingState	
 	}
 	}

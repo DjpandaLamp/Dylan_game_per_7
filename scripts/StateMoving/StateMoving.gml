@@ -23,7 +23,7 @@ if keyboard_check_pressed(vk_up)
         {
             vspd = jumpspeed
         }
-            state = States.JumpingState	
+            
     }
 	  
 	 

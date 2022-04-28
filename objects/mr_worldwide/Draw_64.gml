@@ -5,8 +5,9 @@ draw_set_font(determination_sml)
 
 
 
-
-if  room!=rm_mainmenu
+if instance_exists(Player)
+{
+if  room!=rm_mainmenu and room != rm_cs1
 {
 	draw_set_color(c_white)
 	draw_sprite_ext(ui_sprite,0,16,518+global.uiPos,7,9,0,c_white,1)
@@ -64,4 +65,5 @@ if global.debug = 1
 	draw_text(32,160, "Plot_Value: " + string(global.plot_value))
 	draw_text(32,192, "Change Plot value: O or L")
 	
+}
 }

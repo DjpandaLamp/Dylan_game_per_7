@@ -46,7 +46,7 @@ if  room!=rm_mainmenu and room != rm_cs1
 	
 }
 draw_set_font(determination)
-if global.interact = 1 and global.imgA = 0
+if global.interact = 1
 {
 	draw_text(window_get_width()/2.25,window_get_height()/2,"Paused")
 	draw_text(window_get_width()/2.5,window_get_height()/1.8,"Esc to Unpause")

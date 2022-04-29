@@ -25,7 +25,7 @@ audio_play_sound(beep_se,1,0)
 
 if tallyscore > 10
 {
-draw_text(room_width/2.5,224,"Total score: " + (string((200*global.coins)+(200*global.EnemiesSlain))))
+draw_text(room_width/2.5,224,"Total score: " + (string((100*global.coins)+(200*global.EnemiesSlain))))
 }
 
 if tallyscore = 10

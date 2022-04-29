@@ -21,7 +21,7 @@ if room = rm_mainmenu
     {
         if selected_text=0
         {
-           level_transtion.RoomTo = rm_map1
+           level_transtion.RoomTo = rm_cs1
 		   level_transtion.fadeout = true
         }
         if selected_text=5

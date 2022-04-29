@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
 global.imgA = 0
-fadeout = false
+fadeout = 0
 RoomTo = 0

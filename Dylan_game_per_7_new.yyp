@@ -17,6 +17,7 @@
     {"id":{"name":"bg_mainmenu","path":"sprites/bg_mainmenu/bg_mainmenu.yy",},"order":5,},
     {"id":{"name":"fallingbricks1_spt","path":"sprites/fallingbricks1_spt/fallingbricks1_spt.yy",},"order":1,},
     {"id":{"name":"attackbbox","path":"sprites/attackbbox/attackbbox.yy",},"order":17,},
+    {"id":{"name":"bg_al","path":"sprites/bg_al/bg_al.yy",},"order":7,},
     {"id":{"name":"WaterObj","path":"objects/WaterObj/WaterObj.yy",},"order":6,},
     {"id":{"name":"Objectmenu","path":"objects/Objectmenu/Objectmenu.yy",},"order":2,},
     {"id":{"name":"jungle_night_near","path":"sprites/jungle_night_near/jungle_night_near.yy",},"order":2,},

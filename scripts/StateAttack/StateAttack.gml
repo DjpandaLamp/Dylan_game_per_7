@@ -28,8 +28,9 @@ if !instance_exists(attackhitbox)
 Attacking = false	
 }
 //EXIT STATE
-if Attacking = false
+if Attacking = false or carrying = true
 {
 	state = pstate
+	Attacking = false
 }
 }

@@ -19,12 +19,13 @@ if global.imgA >= 1.1
  
 }
 
-if global.imgA != 0 and fadeout = 0
+if global.imgA != 0 and fadeout = 1 
 {
 	global.interact = 1	
 	
 }
-else if global.imgA = 0 and fadeout = 2 
+
+else if global.imgA = 0.01 and fadeout = 0
 {
 	global.interact = 0	
 	

@@ -43,14 +43,24 @@ global.health = global.healthmax
 
 if keyboard_check_released(vk_escape)
 {
-	if global.interact = 1
+	if paused = true
 	{
-		global.interact = 0	
+	paused = false
 	}
-	else global.interact = 1
+	else
+	{
+	paused = true
+	}
 }
 
-
+if paused = true
+{
+	global.interact = 1
+}
+else
+{
+	global.interact = 0
+}
 
 
 

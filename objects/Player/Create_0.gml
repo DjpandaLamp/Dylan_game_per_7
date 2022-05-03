@@ -32,7 +32,7 @@ fox_max = 6
 buffer_timer = 0 //current buffer
 buffer_max = 5 //What buffer is set when input
 
-
+carrying = false
 
 enum States 
 {

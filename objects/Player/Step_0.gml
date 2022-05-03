@@ -74,7 +74,11 @@ image_xscale = 1
 		uishift = 8
 	}
 	
-	
+	if carrying = true and keyboard_check_pressed(vk_enter)
+	{
+	carrying = false	
+		
+	}
 	
 	
 	

@@ -7,7 +7,7 @@ if instance_exists(Player)
 	JumpTimer = 0
 
 	//exit state
-	if keyboard_check_pressed(vk_control) and global.attack > 0
+	if keyboard_check_pressed(vk_control) and global.attack > 0 and carrying = false
 	{
 	pstate = state
 	state = States.AttackState

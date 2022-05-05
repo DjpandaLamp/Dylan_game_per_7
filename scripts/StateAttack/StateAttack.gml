@@ -4,7 +4,7 @@ function StateAttack(){
 JumpTimer = 0
 
 vspd = vspd/2
-if global.attack !=0 and !instance_exists(attackhitbox) and attackwait <= 0
+if global.attack !=0 and !instance_exists(attackhitbox) and attackwait <= 0 and carrying = false
 {
 	attackwait = 10
 	global.attack -=1

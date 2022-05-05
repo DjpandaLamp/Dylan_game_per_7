@@ -5,11 +5,9 @@
 if carrying = false and keyboard_check_pressed(vk_enter)
 {
 carrying= true
-other.BeingCarryed = true
+CarryingWhat = other.id
+CarryingWhat.BeingCarryed = true
+
 	
 }
-else if carrying = true and keyboard_check_pressed(vk_enter)
-{
-carrying = false
-other.BeingCarryed = false
-}
+

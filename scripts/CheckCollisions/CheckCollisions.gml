@@ -145,3 +145,46 @@ function CheckCollisionsTY(){
 
 	} 
 }
+
+function CheckCollisionsDX(){
+//What to do
+var _inst
+_inst = instance_place(x+hspd,y,door);
+if instance_place(x+hspd,y,door) and _inst.sprite_index = locked_door
+{
+    while(!place_meeting(x+sign(hspd),y,door))
+    {
+        x = x+(sign(hspd));
+        moving = false
+    }
+	
+    hspd = 0;
+
+} 
+
+
+//what animation to play
+
+
+
+//how to exit
+
+}
+
+function CheckCollisionsDY(){
+var _inst
+_inst = instance_place(x,y+vspd,door);
+if instance_place(x,y+vspd,door) and _inst.sprite_index = locked_door
+	{
+	    while(!place_meeting(x,y+sign(vspd),door))
+	    {
+	        y = y+(sign(vspd));
+	    moving = false
+	    }
+	    fallspeed = 0
+	    vspd = 0;
+	} 
+}
+
+
+

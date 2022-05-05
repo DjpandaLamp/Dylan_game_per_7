@@ -24,13 +24,13 @@ if global.interact = 0
 	CheckCollisionsX()
 	CheckCollisionsTX()
 	CheckCollisionsFX()
-
+	CheckCollisionsDX()
 	x=x+(hspd)
 
 	CheckCollisionsY()
 	CheckCollisionsTY()
 	CheckCollisionFY()
-
+	CheckCollisionsDY()
 	y=y+(vspd)
 	#endregion
 	
@@ -76,8 +76,10 @@ image_xscale = 1
 	
 	if carrying = true and keyboard_check_pressed(vk_enter)
 	{
-	carrying = false	
-		
+	carrying = false
+	var cint = CarryingWhat
+	cint.BeingCarryed = false
+	CarryingWhat = ""
 	}
 	
 	

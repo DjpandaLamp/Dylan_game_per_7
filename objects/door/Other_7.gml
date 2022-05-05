@@ -1,4 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-BeingCarryed = false
-NotCarryTimer = 0
+if sprite_index = unlocking_door
+{
+sprite_index = unlocked_door	
+}

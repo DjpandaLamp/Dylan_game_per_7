@@ -105,8 +105,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "card_gorup",
-    "path": "folders/Sprites/card_gorup.yy",
+    "name": "keys",
+    "path": "folders/Sprites/card_gorup/keys.yy",
   },
   "resourceVersion": "1.0",
   "name": "keycard_free",

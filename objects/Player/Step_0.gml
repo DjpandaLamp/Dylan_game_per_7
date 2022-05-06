@@ -61,18 +61,7 @@ else
 image_xscale = 1	
 }
 
-	if x < 400
-	{
-	    uishift = -8
-	}
-	else
-	{
-	    uishift = 8
-	}
-	if y < 400
-	{
-		uishift = 8
-	}
+	
 	
 	if carrying = true and keyboard_check_pressed(vk_enter)
 	{
@@ -91,7 +80,7 @@ else image_speed = 0
 
 
 
-global.uiPos = clamp(global.uiPos+uishift,-400,0)
+
 
 
 

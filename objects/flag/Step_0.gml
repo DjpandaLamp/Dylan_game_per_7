@@ -18,3 +18,8 @@ if flag_type = 1
 {
 	sprite_index = PlaneEnd
 }
+if hidden_flag = 1
+{
+sprite_index = PlaneInvis	
+	
+}

@@ -10,35 +10,36 @@ if instance_exists(Player)
 if  room!=rm_mainmenu and room != rm_cs1
 {
 	draw_set_color(c_white)
-	draw_sprite_ext(ui_sprite,0,16,518+global.uiPos,7,9,0,c_white,1)
+	draw_sprite_ext(ui_sprite,0,-128,-32,64,4,0,c_white,1)
 
-	draw_text(32,598+global.uiPos, "Health: " + string(global.health))
-	draw_text(32,566+global.uiPos, "Coins: " + string(global.coins))
-	draw_text(32,534+global.uiPos, "Time: " + string(floor(Player.roomtimer)))
+	draw_text(192,16, "Health: " + string(global.health))
+	draw_text(356,16, "Attacks: " + string(global.attack))
+	draw_text(512,16, "Coins: " + string(global.coins))
+	draw_text(640,16, "Time: " + string(floor(Player.roomtimer)))
 	
 
 	
 	#region
 	draw_set_color(c_red)
-	draw_rectangle(32,630+global.uiPos,32*global.healthmax,648+36+global.uiPos,0)
+	draw_rectangle(192,44,192+32*(global.healthmax+1),44+36,0)
 	draw_set_color(c_green)
-	draw_rectangle(32,630+global.uiPos,32*global.health,648+36+global.uiPos,0)
+	draw_rectangle(192,44,192+32*(global.health+1),44+36,0)
 	draw_set_color(c_yellow)
-	draw_rectangle(32,630+global.uiPos,32*global.healthmax,648+36+global.uiPos,1)
-	draw_rectangle(33,631+global.uiPos,32*global.healthmax-1,648+35+global.uiPos,1)
-	draw_rectangle(34,632+global.uiPos,32*global.healthmax-2,648+34+global.uiPos,1)
-	draw_rectangle(35,633+global.uiPos,32*global.healthmax-3,648+33+global.uiPos,1)
+	draw_rectangle(192,44,192+32*(global.healthmax+1),44+36,1)
+	draw_rectangle(193,45,192+32*(global.healthmax+1)-1,44+35,1)
+	draw_rectangle(194,46,192+32*(global.healthmax+1)-2,44+34,1)
+	draw_rectangle(195,47,192+32*(global.healthmax+1)-3,44+33,1)
 	#endregion
 	#region
 	draw_set_color(c_dkgray)
-	draw_rectangle(32,694+global.uiPos,32+7*global.attackmax,702+36+global.uiPos,0)
+	draw_rectangle(356,44,356+32+7*global.attackmax,44+36,0)
 	draw_set_color(c_aqua)
-	draw_rectangle(32,694+global.uiPos,32+7*global.attack,702+36+global.uiPos,0)
+	draw_rectangle(356,44,356+32+7*global.attack,44+36,0)
 	draw_set_color(c_yellow)
-	draw_rectangle(32,694+global.uiPos,32+7*global.attackmax,702+36+global.uiPos,1)
-	draw_rectangle(33,695+global.uiPos,31+7*global.attackmax,702+35+global.uiPos,1)
-	draw_rectangle(34,696+global.uiPos,30+7*global.attackmax,702+34+global.uiPos,1)
-	draw_rectangle(35,697+global.uiPos,29+7*global.attackmax,702+33+global.uiPos,1)
+	draw_rectangle(32,228,32+7*global.attackmax,240+36,1)
+	draw_rectangle(33,229,31+7*global.attackmax,240+35,1)
+	draw_rectangle(34,230,30+7*global.attackmax,240+34,1)
+	draw_rectangle(35,231,29+7*global.attackmax,240+33,1)
 	#endregion
 	
 	

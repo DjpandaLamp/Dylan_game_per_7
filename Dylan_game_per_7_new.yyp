@@ -115,6 +115,7 @@
     {"id":{"name":"playerrunleft","path":"sprites/playerrunleft/playerrunleft.yy",},"order":3,},
     {"id":{"name":"determination","path":"fonts/determination/determination.yy",},"order":1,},
     {"id":{"name":"checkpoint","path":"objects/checkpoint/checkpoint.yy",},"order":5,},
+    {"id":{"name":"PlaneInvis","path":"sprites/PlaneInvis/PlaneInvis.yy",},"order":4,},
     {"id":{"name":"Playerattackright","path":"sprites/Playerattackright/Playerattackright.yy",},"order":0,},
     {"id":{"name":"clouds","path":"sprites/clouds/clouds.yy",},"order":1,},
     {"id":{"name":"PlayerJumpStart","path":"sprites/PlayerJumpStart/PlayerJumpStart.yy",},"order":10,},

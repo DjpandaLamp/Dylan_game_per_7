@@ -41,6 +41,14 @@ game_set_speed(60, gamespeed_fps);
 randomize()
 
 
+//screen shake
+
+shark = false
+shark_leng = 60
+shark_for = 5
+	
+	
+	
 
 
 

@@ -36,10 +36,10 @@ if  room!=rm_mainmenu and room != rm_cs1
 	draw_set_color(c_aqua)
 	draw_rectangle(356,44,356+32+7*global.attack,44+36,0)
 	draw_set_color(c_yellow)
-	draw_rectangle(32,228,32+7*global.attackmax,240+36,1)
-	draw_rectangle(33,229,31+7*global.attackmax,240+35,1)
-	draw_rectangle(34,230,30+7*global.attackmax,240+34,1)
-	draw_rectangle(35,231,29+7*global.attackmax,240+33,1)
+	draw_rectangle(356,44,356+32+7*global.attackmax,44+36,1)
+	draw_rectangle(357,45,355+32+7*global.attackmax,44+35,1)
+	draw_rectangle(358,46,354+32+7*global.attackmax,44+34,1)
+	draw_rectangle(359,47,353+32+7*global.attackmax,44+33,1)
 	#endregion
 	
 	

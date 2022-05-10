@@ -6,6 +6,14 @@ if !Player.inv_time > 0
 	Player.inv_time = 2;
 	
 	global.health -=1
+	screenshake(room_speed*2,20,0.5)
+	
+	repeat random_range(5,20)
+	{
+	instance_create_depth(x,y,0,player_pieces)
+		
+	}
+	
 	
 	if global.health < 1
 	{

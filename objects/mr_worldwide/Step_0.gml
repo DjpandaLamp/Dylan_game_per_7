@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this edi
 
+
+
+
 if !instance_exists(Player_flying)
 {
 fly_state = false
@@ -10,20 +13,23 @@ else
 fly_state = true	
 }
 
-if fly_state = false
-{
-var _cx = camera_get_view_x(view_camera[0]);
-var _xspd = 5 * (keyboard_check(vk_right) - keyboard_check(vk_left));
-_cx += _xspd
-camera_set_view_pos(view_camera[0], _cx, 0);
 
-var _b = ds_map_find_first(background_map);
-repeat(ds_map_size(background_map))
-    {
-    layer_x(_b, background_map[? _b] * _cx);
-    _b = ds_map_find_next(background_map, _b);
-    }
-}
+
+if fly_state = false
+	{
+	var _cx = camera_get_view_x(view_camera[0]);
+	var _xspd = 5 * (keyboard_check(vk_right) - keyboard_check(vk_left));
+	_cx += _xspd
+	camera_set_view_pos(view_camera[0], _cx, 0);
+
+	var _b = ds_map_find_first(background_map);
+	repeat(ds_map_size(background_map))
+	    {
+	    layer_x(_b, background_map[? _b] * _cx);
+	    _b = ds_map_find_next(background_map, _b);
+	    }
+	}	
+
 
 
 

@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function screenshake(_time, _magnitude, _fade)
 {
-   with (screenshark)
+   with (mr_worldwide)
    {
       shake = true;
       shake_time = _time;

@@ -21,13 +21,11 @@ global.checkpoint = 0
 global.reX = 0
 global.reY = 0
 paused = false
-aa = 0
-ab = 0
-ac = 0
-ad = 0
-ba = 0
-bb = 0
-bc = 0
+
+shake = false;
+shake_time = 0;
+shake_magnitude = 0;
+shake_fade = 0.25;
 
 
 coin_text = "Coins: "

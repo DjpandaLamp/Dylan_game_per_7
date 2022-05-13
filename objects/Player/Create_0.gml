@@ -23,6 +23,11 @@ inv_time = 0
 attackwait = 10
 uishift = 0
 JumpTime = 0
+falltime = 4
+
+stepcount = 0
+
+step_length = 0
 
 on_ground = true
 

@@ -16,6 +16,14 @@ if global.interact = 0
 	CheckInputs()
 	vspd = vspd+fallspeed
 	if vspd > 12.5 vspd = 12.5
+	if vspd = 12.5
+	{
+	falltime += 1/room_speed	
+		
+	}
+	
+	
+	
 	
 	script_execute(state_array[state])
 	
@@ -51,6 +59,22 @@ if global.interact = 0
 	{
 	sprite_array[States.MovingState] = PlayerMidJump
 	sprite_array[States.IdleState] = PlayerMidJump
+	}
+	
+	
+	if (moving = true) and (on_ground = true)
+	{
+		stepcount +=1
+		if stepcount > step_length 
+		{
+		stepcount = 0
+		step_length= irandom_range(4,10)
+		audio_play_sound(footsteps_se,0,0)
+		}
+		
+		
+		
+		
 	}
 if dir = 3 
 {

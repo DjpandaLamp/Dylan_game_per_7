@@ -21,14 +21,14 @@ if  room!=rm_mainmenu and room != rm_cs1
 	
 	#region
 	draw_set_color(c_red)
-	draw_rectangle(192,44,192+32*(global.healthmax+1),44+36,0)
+	draw_rectangle(192,44,192+32*(global.healthmax),44+36,0)
 	draw_set_color(c_green)
-	draw_rectangle(192,44,192+32*(global.health+1),44+36,0)
+	draw_rectangle(192,44,192+32*(global.health),44+36,0)
 	draw_set_color(c_yellow)
-	draw_rectangle(192,44,192+32*(global.healthmax+1),44+36,1)
-	draw_rectangle(193,45,192+32*(global.healthmax+1)-1,44+35,1)
-	draw_rectangle(194,46,192+32*(global.healthmax+1)-2,44+34,1)
-	draw_rectangle(195,47,192+32*(global.healthmax+1)-3,44+33,1)
+	draw_rectangle(192,44,192+32*(global.healthmax),44+36,1)
+	draw_rectangle(193,45,192+32*(global.healthmax)-1,44+35,1)
+	draw_rectangle(194,46,192+32*(global.healthmax)-2,44+34,1)
+	draw_rectangle(195,47,192+32*(global.healthmax)-3,44+33,1)
 	#endregion
 	#region
 	draw_set_color(c_dkgray)

@@ -6,7 +6,7 @@ if !Player.inv_time > 0
 	Player.inv_time = 2;
 	
 	global.health -=1
-	screenshake(room_speed*2,20,0.5)
+	screenshake(room_speed/3,10,.5)
 	
 	repeat random_range(5,20)
 	{

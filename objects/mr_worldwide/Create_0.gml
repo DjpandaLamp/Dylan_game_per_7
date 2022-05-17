@@ -20,6 +20,7 @@ global.debug = 0
 global.checkpoint = 0
 global.reX = 0
 global.reY = 0
+leveltext = ""
 paused = false
 
 shake = false;

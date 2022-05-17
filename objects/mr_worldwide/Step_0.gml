@@ -1,7 +1,27 @@
 /// @description Insert description here
 // You can write your code in this edi
-
-
+#region //level texts
+if room = rm_cs1 or rm_mainmenu
+{
+leveltext = "If you see this you have discovered an error"	
+}
+if room = rm_al
+{
+leveltext = "1-0"
+}
+if room = rm_map1
+{
+leveltext = "1-map"
+}
+if room = rm_1_1 or rm_1_fly
+{
+leveltext = "1-1"	
+}
+if room = rm_1_2
+{
+leveltext = "1-2"
+}
+#endregion
 
 
 if !instance_exists(Player_flying)

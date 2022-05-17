@@ -12,6 +12,7 @@ if keyboard_check_pressed(vk_up)
         moving = true
         if on_ground = true 
         {
+			audio_play_sound(jump_se,0,0)
             vspd = jumpspeed
         }
         else
@@ -21,6 +22,7 @@ if keyboard_check_pressed(vk_up)
         
         if jump = false and fox_timer > 0 and on_ground = false
         {
+			audio_play_sound(jump_se,0,0)
             vspd = jumpspeed
         }
             

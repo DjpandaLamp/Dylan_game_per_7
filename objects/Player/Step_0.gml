@@ -62,13 +62,13 @@ if global.interact = 0
 	}
 	
 	
-	if (moving = true) and (on_ground = true)
+	if (moving = true) and (on_ground = true) and room = rm_al
 	{
 		stepcount +=1
 		if stepcount > step_length 
 		{
 		stepcount = 0
-		step_length= irandom_range(4,10)
+		step_length= 8
 		audio_play_sound(footsteps_se,0,0)
 		}
 		

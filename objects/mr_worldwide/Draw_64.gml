@@ -16,6 +16,7 @@ if  room!=rm_mainmenu and room != rm_cs1
 	draw_text(356,16, "Attacks: " + string(global.attack))
 	draw_text(512,16, "Coins: " + string(global.coins))
 	draw_text(640,16, "Time: " + string(floor(Player.roomtimer)))
+	draw_text(772,16, "Level: " + leveltext)
 	
 
 	
@@ -34,7 +35,7 @@ if  room!=rm_mainmenu and room != rm_cs1
 	draw_set_color(c_dkgray)
 	draw_rectangle(356,44,356+32+7*global.attackmax,44+36,0)
 	draw_set_color(c_aqua)
-	draw_rectangle(356,44,356+32+7*global.attack,44+36,0)
+	draw_rectangle(356,44,356+10*global.attack,44+36,0)
 	draw_set_color(c_yellow)
 	draw_rectangle(356,44,356+32+7*global.attackmax,44+36,1)
 	draw_rectangle(357,45,355+32+7*global.attackmax,44+35,1)

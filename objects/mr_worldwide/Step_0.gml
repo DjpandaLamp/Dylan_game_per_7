@@ -177,4 +177,13 @@ roomcolor = c_white
 }
 
 
+if global.shownhealth !=global.health
+{
+global.shownhealth = approach(global.shownhealth,global.health,0.05)		
+}
+if global.shownattack !=global.attack
+{
+global.shownattack = approach(global.shownattack,global.attack,0.05)		
+}
+
 

@@ -34,9 +34,10 @@ function PlayerDeath(){
 	global.points = global.points - 200
 	global.health = global.healthmax
 	global.attack = global.attackmax
+	sprite_index = Placeholder_blank_sprite
+	level_transtion.RoomTo = room
+	level_transtion.fadeout = true
 	
-	
-	room_restart()
 	
 	audio_stop_all()
 }

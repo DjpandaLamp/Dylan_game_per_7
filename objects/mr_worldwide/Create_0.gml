@@ -1,10 +1,14 @@
 global.uiPos = 0
 global.plot_value = 0
+global.shownhealth = 3
 global.health = 3
 global.healthmax = 3
+global.shownattack = 10
 global.attack = 10
 global.attackmax = 10
 global.coins = 0
+
+
 global.points = 0
 
 global.EnemiesSlain = 0

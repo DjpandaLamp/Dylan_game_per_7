@@ -34,3 +34,11 @@ if Attacking = false or carrying = true
 	Attacking = false
 }
 }
+
+
+function Dash(){
+
+	
+	
+	
+}

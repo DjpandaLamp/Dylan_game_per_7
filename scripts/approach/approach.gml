@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function approach(arg0,arg1,arg2){
 /// approach(start, end, shift). thanks for the code :)
 

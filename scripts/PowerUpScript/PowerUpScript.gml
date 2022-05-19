@@ -31,12 +31,14 @@ function PowerUpScript(arg1){
 
 
 function HealthRestore(){
-	global.health = global.healthmax	
+	global.health = global.healthmax
+	
 }
 
 function AttackRestore(){
 	
 	global.attack = global.attackmax
+	
 }
 
 function HealthUp(){

@@ -25,7 +25,8 @@ if instance_exists(Player)
         moving = true
         if on_ground = true 
         {
-            vspd = jumpspeed
+         audio_play_sound(jump_se,0,0)
+		 vspd = jumpspeed
         }
         else
         {
@@ -34,6 +35,7 @@ if instance_exists(Player)
         
         if jump = false and fox_timer > 0 and on_ground = false
         {
+			audio_play_sound(jump_se,0,0)
             vspd = jumpspeed
         }
             

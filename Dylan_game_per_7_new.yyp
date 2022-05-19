@@ -4,6 +4,7 @@
     {"id":{"name":"endflag_spt","path":"sprites/endflag_spt/endflag_spt.yy",},"order":2,},
     {"id":{"name":"jungle_far","path":"sprites/jungle_far/jungle_far.yy",},"order":0,},
     {"id":{"name":"playerlookaround","path":"sprites/playerlookaround/playerlookaround.yy",},"order":2,},
+    {"id":{"name":"Placeholder_blank_sprite","path":"sprites/Placeholder_blank_sprite/Placeholder_blank_sprite.yy",},"order":30,},
     {"id":{"name":"checkpoint_empty","path":"sprites/checkpoint_empty/checkpoint_empty.yy",},"order":23,},
     {"id":{"name":"bg_map1","path":"sprites/bg_map1/bg_map1.yy",},"order":3,},
     {"id":{"name":"jabber","path":"objects/jabber/jabber.yy",},"order":0,},

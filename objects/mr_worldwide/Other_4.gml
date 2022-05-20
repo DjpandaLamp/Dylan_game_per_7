@@ -18,6 +18,10 @@ audio_play_sound(GreandForest,1,99)
 if room = rm_map1
 {
 audio_play_sound(PlainsAndPlanes,1,99)	
+global.checkpoint = 0
+global.health = global.healthmax
+global.attack = global.attackmax
+
 }
 if room = rm_1_fly
 {

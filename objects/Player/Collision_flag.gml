@@ -7,7 +7,7 @@ if global.interact = 0
 	
 	if other.hidden_flag = 0
 	{
-		if keyboard_check_pressed(vk_enter) and global.plot_value+1 = other.world_value
+		if keyboard_check_pressed(vk_right) and global.plot_value+1 = other.world_value
 		{
 			if other.flag_type = 1
 			{

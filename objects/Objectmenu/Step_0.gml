@@ -24,10 +24,16 @@ if room = rm_mainmenu
            level_transtion.RoomTo = rm_cs1
 		   level_transtion.fadeout = true
         }
-        if selected_text=5
+        if selected_text=1
         {
             game_end()
         }
     }
+	plane_sprite +=12/room_speed
+	if plane_sprite >= 4
+	{
+	plane_sprite = 0	
+	}
+	
 }
 

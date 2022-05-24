@@ -9,12 +9,29 @@ if global.interact = 0
 		if bulletTimer<0
 		{
 			bulletTimer = 3
-			var bullet =instance_create_layer(x,y,"Instances",turnedprojectile)
-		
+			bulletspeed = irandom_range(0,10)
+			if bulletspeed >= 8.5
+			{
+			var bullet =instance_create_layer(x,y,"Instances",turnedprojectilefast)
+			}
+			else
+			{
+			var bullet =instance_create_layer(x,y,"Instances",turnedprojectilefast)
+			}
+			
 			with(bullet)
 			{
+				if turnedturret.bulletspeed >= 8.5
+				{
+				speed = 9;
+				direction = point_direction(x,y,Player.x+irandom_range(-25,25),Player.y+irandom_range(-25,25))
+				}
+				else
+				{
+				
 				speed = 3;
 				direction = point_direction(x,y,Player.x+irandom_range(-100,100),Player.y+irandom_range(-100,100))
+				}
 			}
 		
 		}

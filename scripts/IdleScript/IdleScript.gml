@@ -7,14 +7,14 @@ if instance_exists(Player)
 	JumpTimer = 0
 
 	//exit state
-	if keyboard_check_pressed(vk_control) and global.attack > 0 and carrying = false
+	if keyboard_check_pressed(vk_left) and global.attack > 0 and carrying = false
 	{
 	pstate = state
 	state = States.AttackState
 	}
 
 
-	if keyboard_check(vk_right) or keyboard_check(vk_left) 
+	if keyboard_check(ord("D")) or keyboard_check(ord("A")) 
 	{	
 		moving = true	
 	}
@@ -33,7 +33,7 @@ if instance_exists(Player)
             buffer_timer = buffer_max
         }
         
-        if jump = false and fox_timer > 0 and on_ground = false
+        if jump = false and fox_timer > 0 and on_ground = false and room !=rm_1_fly
         {
 			audio_play_sound(jump_se,0,0)
             vspd = jumpspeed

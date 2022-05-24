@@ -4,7 +4,7 @@ function StateMoving(){
 if instance_exists(Player)
 {
 	JumpTimer = 0
-	hspd = ((keyboard_check(vk_right)-keyboard_check(vk_left)))*5
+	hspd = ((keyboard_check(ord("D"))-keyboard_check(ord("A"))))*5
 
 if keyboard_check_pressed(vk_up) 
     {
@@ -20,7 +20,7 @@ if keyboard_check_pressed(vk_up)
             buffer_timer = buffer_max
         }
         
-        if jump = false and fox_timer > 0 and on_ground = false
+        if jump = false and fox_timer > 0 and on_ground = false and room !=rm_1_fly
         {
 			audio_play_sound(jump_se,0,0)
             vspd = jumpspeed
@@ -39,12 +39,12 @@ if keyboard_check_pressed(vk_up)
 
 	moving = false
 
-	if keyboard_check(vk_right) 
+	if keyboard_check(ord("D")) 
 	    {
 	        dir = 2
 	        moving = true        
 	    }
-	if keyboard_check(vk_left) 
+	if keyboard_check(ord("A")) 
 	    {
 	        dir = 3
 	        moving = true
@@ -62,7 +62,7 @@ if keyboard_check_pressed(vk_up)
 	}
 
 
-	if keyboard_check_pressed(vk_control) and global.attack > 0 and carrying = false
+	if keyboard_check_pressed(vk_left) and global.attack > 0 and carrying = false
 	{
 	pstate = state
 	state = States.AttackState
@@ -71,7 +71,7 @@ if keyboard_check_pressed(vk_up)
 
 
 	//Exit State
-	if !keyboard_check(vk_up) and !keyboard_check(vk_right) and !keyboard_check(vk_left) 
+	if !keyboard_check(vk_up) and !keyboard_check(ord("D")) and !keyboard_check(ord("A")) 
 	{	
 	state = States.IdleState	
 	}

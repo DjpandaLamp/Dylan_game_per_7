@@ -32,5 +32,5 @@ if room = rm_mainmenu
         draw_text(space*5,space*6,"Exit Game") 
     }
     #endregion
- 
+	draw_sprite(player_plane_day,plane_sprite,600,500)
 }

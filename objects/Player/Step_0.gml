@@ -87,7 +87,7 @@ image_xscale = 1
 
 	
 	
-	if carrying = true and keyboard_check_pressed(vk_enter)
+	if carrying = true and keyboard_check_pressed(vk_right)
 	{
 	carrying = false
 	var cint = CarryingWhat

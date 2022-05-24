@@ -38,7 +38,7 @@ fly_state = true
 if fly_state = false
 	{
 	var _cx = camera_get_view_x(view_camera[0]);
-	var _xspd = 5 * (keyboard_check(vk_right) - keyboard_check(vk_left));
+	var _xspd = 5 * (keyboard_check(ord("D")) - keyboard_check(ord("A")));
 	_cx += _xspd
 	camera_set_view_pos(view_camera[0], _cx, 0);
 
@@ -120,7 +120,7 @@ else coin_text = "Coins: "
 
 
 
-if keyboard_check_pressed(ord("D"))
+if keyboard_check_pressed(ord("T"))
 {
 if global.debug = 1 
 {

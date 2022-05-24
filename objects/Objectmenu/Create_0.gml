@@ -2,7 +2,7 @@
 // You can write your code in this editor
 //Create event
 
-
+plane_sprite = 0
 
 t = 0;
 increment = 5;

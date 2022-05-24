@@ -4,10 +4,21 @@ cs_timer +=1/room_speed
 
 if cs_number = 0
 {
-	if cs_timer	= 2
+	if cs_timer = 2
 	{
-		sprite_index = playerpoweringup
+	sprite_index = playerpoweringup	
 	}
+	if cs_timer	>= 2 and cs_timer <= 7
+	{
+		
+		y=y-0.08
+	}
+	
+	if cs_timer =7 
+	{
+	y = ystart	
+	}
+	
 	if cs_timer >= 7 and cs_timer <=10
 	{
 	sprite_index = playerrunright	

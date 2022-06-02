@@ -186,4 +186,7 @@ if global.shownattack !=global.attack
 global.shownattack = approach(global.shownattack,global.attack,0.05)		
 }
 
-
+if keyboard_check_pressed(vk_enter)
+{
+game_end()	
+}

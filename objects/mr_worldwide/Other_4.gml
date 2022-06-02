@@ -9,7 +9,11 @@ background_map[? layer_get_id("background_far")] = 0.2;
 
 
 
-
+if room = rm_mainmenu
+{
+audio_play_sound(ButAnAshenDream,1,99999)	
+	
+}
 
 if room = rm_1_1 or room = rm_1_2
 {

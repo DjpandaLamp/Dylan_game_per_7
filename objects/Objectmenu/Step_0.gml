@@ -17,7 +17,7 @@ if room = rm_mainmenu
     {
         selected_text +=1
     }
-    if keyboard_check_pressed(vk_enter) and room=rm_mainmenu
+    if keyboard_check_pressed(vk_right) and room=rm_mainmenu
     {
         if selected_text=0
         {

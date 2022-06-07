@@ -3,6 +3,7 @@
   "glyphOperations": 0,
   "interpreter": 0,
   "pointRounding": 0,
+  "applyKerning": 0,
   "fontName": "Determination Sans Web",
   "styleName": "Regular",
   "size": 24.0,
@@ -20,6 +21,7 @@
     "path": "texturegroups/Default",
   },
   "ascenderOffset": 0,
+  "ascender": 25,
   "glyphs": {
     "32": {"x":2,"y":2,"w":6,"h":33,"character":32,"shift":6,"offset":0,},
     "33": {"x":146,"y":107,"w":8,"h":33,"character":33,"shift":10,"offset":0,},

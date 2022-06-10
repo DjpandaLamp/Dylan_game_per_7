@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Dylan_game_per_7_new",
-    "path": "Dylan_game_per_7_new.yyp",
+    "name": "Dylan_game_per_7_newer",
+    "path": "Dylan_game_per_7_newer.yyp",
   },
   "resourceVersion": "1.0",
   "name": "Sprite14",

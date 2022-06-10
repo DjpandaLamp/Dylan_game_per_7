@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this edi
 #region //level texts
+
 if room = rm_cs1 or rm_mainmenu
 {
 leveltext = "If you see this you have discovered an error"	

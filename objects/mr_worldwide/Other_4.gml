@@ -19,9 +19,12 @@ if room = rm_1_1 or room = rm_1_2
 {
 audio_play_sound(GreandForest,1,99)	
 }
-if room = rm_map1
+if room = rm_map1 or room = end_room
 {
-audio_play_sound(PlainsAndPlanes,1,99)	
+	if room = rm_map1
+	{
+	audio_play_sound(PlainsAndPlanes,1,99)	
+	}
 global.checkpoint = 0
 global.health = global.healthmax
 global.attack = global.attackmax

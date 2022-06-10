@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "ButAnAshenDream.mp3",
-  "duration": 12.8260832,
+  "duration": 12.826083,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

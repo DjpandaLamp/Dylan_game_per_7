@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "GreandForest.mp3",
-  "duration": 96.0260849,
+  "duration": 96.026085,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -3,6 +3,7 @@
   "glyphOperations": 0,
   "interpreter": 0,
   "pointRounding": 0,
+  "applyKerning": 0,
   "fontName": "Perpetua Titling MT",
   "styleName": "Bold",
   "size": 20.0,
@@ -20,6 +21,7 @@
     "path": "texturegroups/Default",
   },
   "ascenderOffset": 2,
+  "ascender": 0,
   "glyphs": {
     "32": {"x":2,"y":2,"w":9,"h":34,"character":32,"shift":9,"offset":0,},
     "33": {"x":266,"y":74,"w":6,"h":34,"character":33,"shift":6,"offset":0,},
